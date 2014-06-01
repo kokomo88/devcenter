@@ -3,6 +3,12 @@
 body {
   background: #EDF0F3;
   font-family: sans-serif;
+  color: #585A59;
+}
+
+a {
+  text-decoration: none;
+  color: #F27A3F;
 }
 
 .navigation {
@@ -37,13 +43,12 @@ body {
 .wrapper {
   width: 1050px;
   margin: 0 auto;
+  background-color: #DCE0E2;
 
   .sidebar {
     width: 250px;
     float: left;
     background-color: #DCE0E2;
-    position: fixed;
-    height: 100%;
 
     h3 {
       color: #5a647d;
@@ -70,7 +75,6 @@ body {
 
   .content {
     width: 760px;
-    margin: 0 0 0 250px;
     padding: 20px;
     float: left;
     background-color: #FFFFFF;
@@ -86,10 +90,50 @@ body {
     p {
       margin: 0;
       padding: 0 0 30px 0;
-      color: #585A59;
       font-weight: 300;
       font-size: 14px;
       line-height: 16px;
+    }
+  }
+
+  .footer {
+    background-color: #FFFFFF;
+    border-top: 1px #DCE0E2 solid;
+    padding: 20px;
+
+    text-align: center;
+    font-weight: 300;
+    font-size: 12px;
+    line-height: 24px;
+
+    .footer-col {
+      width: 425px;
+      margin: 40px 40px;
+      float: left;
+
+      .title {
+        text-transform: uppercase;
+      }
+
+      .separator {
+        height: 1px;
+        background-color: #DCE0E2;
+        margin: 2px 0 5px 0;
+      }
+
+      p {
+      }
+    }
+
+    .copyright {
+      width: 80%;
+      margin: 0 auto;
+      text-transform: uppercase;
+    }
+
+    .footer-nav {
+      display: inline-block;
+      padding: 0 0 0 10px;
     }
   }
 }
