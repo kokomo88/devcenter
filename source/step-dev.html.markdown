@@ -2,6 +2,23 @@
 title: Step Development
 ---
 
-# How to develop steps
 
-Here's how
+# What is a Step?
+
+TODO
+
+
+# How to develop Steps
+
+TODO
+
+
+# Step Versioning
+
+We advise to use “gitflow” (a really great cheat-sheet: [http://danielkummer.github.io/git-flow-cheatsheet/](http://danielkummer.github.io/git-flow-cheatsheet/)) for your steps.
+
+When a user adds your Step to a Workflow it will lock the Step’s version in the Workflow - no auto updates possible. The user will have to manually update the Step’s version in the Workflow to use a newer version.
+
+As a general version number rule we suggest you to use the three digit (1.0.0), Semantic Versioning : [http://semver.org/](http://semver.org/)
+
+Neither is enforced at the moment and so it’s not required but these are the best practices we use and the ones we provide long term support for.
