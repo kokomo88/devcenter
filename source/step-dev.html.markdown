@@ -24,6 +24,14 @@ As a general version number rule we suggest you to use the three digit (1.0.0), 
 Neither is enforced at the moment and so it’s not required but these are the best practices we use and the ones we provide long term support for.
 
 
+# Environment Variables
+
+TODO:
+
+- Default Environment Variables
+- Step Outputs
+
+
 # Step Pipeing
 
 TODO
