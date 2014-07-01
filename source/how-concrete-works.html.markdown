@@ -9,21 +9,32 @@
 
 
 - Log in with your email and password (if you’re not a member yet click Sign up, enter your email, password and you are ready to build your apps)
-- Above all, please note that we would really like to hear what you think about Concrete and on every page there is a  icon in the lower  right corner where you can send us a message even with a screenshot.
+- Above all, please note that we would really like to hear what you think about Concrete and on every page there is a ![Feedback](images/how-concrete-works/feedback.png "Feedback") icon in the lower  right corner where you can send us a message even with a screenshot.
+
+![Feedback](images/how-concrete-works/feedback-bubble.png "Feedback")
  
 ##App registration
 
 - First there won’t be any apps listed on the left side menu.
 
+![First dashboard](images/how-concrete-works/no-apps.png "First dashboard")
+
 - Click the New App button to get to the Create App page. 
 	- The first step is to select where the given apps code is stored. You can notice that at this step you have to connect a Bitbucket or a GitHub account if you registered using an email address and a password.
+	
+![Add first app](images/how-concrete-works/add-first-app.png "Add first app")
 
-			If you registered eg with Bitbucket account (or after you connect your Bitbucket account) you’ll see a “Use” button under the given source code hosting provider’s icon.
+			If you registered eg with Bitbucket account (or after you connect your Bitbucket account) you’ll see a “Use” button under the given source code hosting provider’s icon. 
+			
+![Use Bitbucket](images/how-concrete-works/use-bitbucket.png "Use Bitbucket")						
 
-	- If you use any other provider, have your own company source hosting solution you can simply add it by clicking the link under the two icons and adding the GIT repository’s SSH URL and SSH private key. When done simply press the “Start validation” button.
+- If you use any other provider, have your own company source hosting solution you can simply add it by clicking the link under the two icons and adding the GIT repository’s SSH URL and SSH private key. When done simply press the “Start validation” button.
+	
+![Select repository host](images/how-concrete-works/select-repo-host.png "Select repository host")
 
 	- After you choose the provider (Github or BitBucket) the next step is to select the repository and click the “Use selected repo” button.
 
+![Select repository](images/how-concrete-works/select-repo.png "Select repository")
 	- Next step is to validate the given repository.
 
 #####A few words about the validation process:
