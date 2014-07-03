@@ -1,38 +1,10 @@
 #How Concrete Works
 
-##What is Concrete, what can you do with it
+##A few notes in advance
 
-Concrete is a Continous Integration (CI) System.
-
-- Concrete associates a step based workflow to the application and when a build is scheduled to run it executes the workflow. 
-	- A workflow consists of one or more steps which are opensource projects that can be imported in concrete (yes, you can develop your own steps and use it in your own build workflow or you can use one that is currently in the system.
-	- The steps can send emails, text messages, clone repositories, pass values to each other and many more.
-- There's a role system for every application.
-	- The User who registers the application in the system is the owner
-	- The three roles are:
-		- View builds and deploys
-		- Create builds and deploys
-		- Admin
-- After a build is finished you can view the logs of every step that ran during the workflow. The logs can be viewed as "Formatted Output" or "Raw Output"
-
-##How a build works / what’s the process
-- First of all the build is triggered. This can happen in 3 ways:
-	- pressing the "build now" button on the given application's screen (run manually)
-	- after a given time elapsed since the last build (run periodically)
-	- after each push to the given branch (run when push arrives)
-- A worker is assigned and a Virtual Machine (VM) is created.
-- The environment variables are created, that will be used during the build process.
-- The workflow steps are executed in the same order as on the workflow page of the application, from top to bottom. (You can also modify the order of the steps by dragging them)
-	- For each Step the log it generates is displayed on the page. You can choose to use formatted or raw output.
-- After the execution of the steps finished all sourcecodes are erased from the VM and the VM is destroyed.
-
-##Code security
-The code downloaded to the worker is only stored until the build finishes. After it the code is deleted and the VM is destroyed.
-
-
-
-- Log in with your email and password (if you’re not a member yet click Sign up, enter your email, password and you are ready to build your apps)
-- Above all, please note that we would really like to hear what you think about Concrete and on every page there is a ![Feedback](images/how-concrete-works/feedback.png "Feedback"){: .inline-image } icon in the lower  right corner where you can send us a message even with a screenshot.  
+- **Most importantly a few words about the safty of your code:** 
+	- **To guarantee the security of your builds we use virtual machines for builds. Every build runs in it's own virtual machine and we discard the whole virtual machine after the build finishes.**
+- Above all, please note that we would really like to hear what you think about Concrete and on every page there is a ![Feedback](images/how-concrete-works/feedback.png "Feedback"){: .inline-image } icon in the lower right corner where you can send us a message even with a screenshot.  
 
 ![Feedback](images/how-concrete-works/feedback-bubble.png "Feedback")
  
