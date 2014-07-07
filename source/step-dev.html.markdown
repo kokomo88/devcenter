@@ -10,6 +10,8 @@ TODO
 
 # How to develop Steps
 
+Create a test workflow for every Step you develop.
+
 TODO
 
 
