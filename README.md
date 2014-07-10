@@ -1,2 +1,2 @@
-concrete-devcenter
+bitrise-devcenter
 ==================
