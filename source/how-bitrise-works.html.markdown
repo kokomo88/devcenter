@@ -1,7 +1,5 @@
 #How Bitrise Works
 
-####Feedback
-Above all, please note that we would really like to hear what you think about Bitrise and on every page there is a ![Feedback](images/how-bitrise-works/feedback.png "Feedback"){: .inline-image } icon in the lower right corner where you can send us a message even with a screenshot.  
+The main pillar of Bitrise are the Virtual Machines. Using Virtual Machines provides the desired [Code Security](code-security.html) by disposing the whole Virtual Machine after the workflow finished and using a whole new one to start the build process.
 
-![Feedback](images/how-bitrise-works/feedback-bubble.png "Feedback")
-
+The whole 
