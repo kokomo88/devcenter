@@ -1,3 +1,7 @@
+---
+title: What is Bitrise
+---
+
 #What is Bitrise, what can you do with it
 
 To put it short Bitrise is a Continous Integration (CI) System with lots of customization options. It provides an easy to use web surface to manage and overview builds, deploys.

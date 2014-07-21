@@ -1,3 +1,7 @@
+---
+title: How a build works
+---
+
 ##How a build works / what’s the process
 - First of all the build is triggered. This can happen in 3 ways:
 	- pressing the "build now" button on the given application's screen (run manually)

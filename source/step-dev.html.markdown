@@ -5,14 +5,16 @@ title: Step Development
 
 # What is a Step?
 
-TODO
+To put it short and simple: a Step is a public script repository with step.sh file.
+
+Steps are the main building blocks to a workflow. The script can clone repositories, gather system information of the Virtual Machine, send emails and so much more.
 
 
 # How to develop Steps
 
-Create a test workflow for every Step you develop.
+Create the public repository for the step and make sure the step.sh file is included. This file is executed by Bitrise. Create a test workflow for every Step you develop.
 
-TODO
+
 
 
 # Step Versioning
