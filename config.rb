@@ -69,7 +69,7 @@ configure :build do
 end
 
 activate :disqus do |d|
-  d.shortname = "bitrise"
+  d.shortname = "concretebuilder"
 end
 
 activate :minify_html
