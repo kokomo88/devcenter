@@ -1,13 +1,18 @@
 <!doctype html>
 <html>
   <head>
-    <meta charset="utf-8">
+    <meta charset="utf-8" />
     
     <!-- Always force latest IE rendering engine or request Chrome Frame -->
-    <meta content="IE=edge,chrome=1" http-equiv="X-UA-Compatible">
-    
+    <meta content="IE=edge,chrome=1" http-equiv="X-UA-Compatible" />
+    <meta name=viewport content="width=device-width, initial-scale=1.0" />
+    <meta name=apple-mobile-web-app-capable content=yes>
+
     <!-- Use title if it's in the page YAML frontmatter -->
-    <title><%= current_page.data.title || "The Middleman" %></title>
+    <title><%= current_page.data.title ? "#{current_page.data.title} - Bitrise Devcenter" : "Bitrise Devcenter" %></title>
+    <meta name="description" content="Bitrise is a cloud based automatic app builder and distribution system">
+    <meta name="keywords" content="continuous integration, continuous delivery, ios continious integration, ios continious delivery, mobile continious integration, mobile continious delivery, jenkins alternative, cisimple alternative, buildozer alternative, greenhouse alternative" /> 
+    <meta name="author" content="bitrise">
     
     <%= stylesheet_link_tag "normalize", "all" %>
     <%= javascript_include_tag  "all" %>
