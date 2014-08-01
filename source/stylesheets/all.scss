@@ -68,8 +68,11 @@ a:hover {
 .wrapper {
   width: 1070px;
   margin: 0 auto;
-/*  background-color: #DCE0E2;
-*/
+
+  &.page-body {
+    background: url('/images/content_background.png');
+  }
+
   .sidebar {
     width: 250px;
     float: left;
@@ -156,6 +159,7 @@ a:hover {
       color: #2a2a2a;
     }
   }
+}
 
 .footer {
   background-color: #3b3b3b;
@@ -240,14 +244,13 @@ a:hover {
     display: inline-block;
     padding: 0 0 0 10px;
   }
-.wrapper {
-  width: 90%;
-  margin: 0 auto;
-  padding-right: 0px;
-  margin-right: 0px;
-}
-
-}
+  
+  .footer-wrapper {
+    width: 90%;
+    margin: 0 auto;
+    padding-right: 0px;
+    margin-right: 0px;
+  }
 
 }
 
