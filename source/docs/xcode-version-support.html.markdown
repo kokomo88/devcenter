@@ -63,3 +63,36 @@ with the content:
 Right now xctool doesn't support Xcode 6 in it's latest release version.
 We'll [keep an eye](https://github.com/facebook/xctool/issues/380) on this issue
 and we'll update the preinstalled xctool in our VMs when the new release gets available.
+
+
+# Tips and tricks
+
+We install our Xcodes into a /Applications/Xcodes folder with the Xcode app's major version as a postfix.
+
+For example the current Xcode 6 version is available at: */Applications/Xcodes/Xcode6.app*
+
+
+## List preinstalled Xcodes and get version information
+
+If you want to list all the preinstalled Xcode versions you can drop
+a [Bash Script Step](https://github.com/bitrise-io/steps-bash-script) into your
+workflow with the content:
+
+    #!/bin/bash
+    FILES=/Applications/Xcodes/Xcode*.app
+    for f in $FILES
+    do
+    	echo "--------------"
+    	echo "Switching to Xcode at: ${f}"
+    	xcode_switch_arg="${f}/Contents/Developer"
+    	sudo xcode-select --switch "${xcode_switch_arg}"
+    	echo " Version info:"
+    	xcodebuild -version
+    	echo " SDKs:"
+    	xcodebuild -showsdks
+    	echo "--------------"
+    done
+
+This will find all the Xcode apps in the /Applications/Xcodes folder,
+activate each by calling xcode-select and print the version of Xcode
+and all the SDKs (and Simulators) available for the version.
