@@ -1,9 +1,20 @@
 ---
-title: Build URL Hooks
+title: Build Trigger API
 ---
 
+# What is the Build Trigger API?
 
-# How to start a Build by calling the Trigger URL?
+With the Build Trigger API you can start a new build of your app
+with a simple API call.
+
+You can define parameters for the build like what branch or tag to use
+and what build message to present on the Build's details page.
+
+With the Build Trigger API you can integrate your app's building
+with your other services.
+
+
+# How to start a Build by calling the Trigger API?
 
 You have to call your build trigger with a POST request containing a "payload" parameter
 with a JSON string value.
