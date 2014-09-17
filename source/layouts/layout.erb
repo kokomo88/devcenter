@@ -1,89 +1,101 @@
 <!doctype html>
 <html>
-  <head>
-    <meta charset="utf-8" />
+	<head>
+		<meta charset="utf-8" />
 
-    <!-- Always force latest IE rendering engine or request Chrome Frame -->
-    <meta content="IE=edge,chrome=1" http-equiv="X-UA-Compatible" />
-    <meta name=viewport content="width=device-width, initial-scale=1.0" />
-    <meta name=apple-mobile-web-app-capable content=yes>
+		<!-- Always force latest IE rendering engine or request Chrome Frame -->
+		<meta content="IE=edge,chrome=1" http-equiv="X-UA-Compatible" />
+		<meta name=viewport content="width=device-width, initial-scale=1.0" />
+		<meta name=apple-mobile-web-app-capable content=yes>
 
-    <!-- Use title if it's in the page YAML frontmatter -->
-    <title><%= current_page.data.title ? "#{current_page.data.title} - Bitrise Devcenter" : "Bitrise Devcenter" %></title>
-    <meta name="description" content="Bitrise is a cloud based automatic app builder and distribution system">
-    <meta name="keywords" content="continuous integration, continuous delivery, ios continious integration, ios continious delivery, mobile continious integration, mobile continious delivery, jenkins alternative, cisimple alternative, buildozer alternative, greenhouse alternative" />
-    <meta name="author" content="bitrise">
+		<!-- Use title if it's in the page YAML frontmatter -->
+		<title><%= current_page.data.title ? "#{current_page.data.title} - Bitrise Devcenter" : "Bitrise Devcenter" %></title>
+		<meta name="description" content="Bitrise is a cloud based automatic app builder and distribution system">
+		<meta name="keywords" content="continuous integration, continuous delivery, ios continious integration, ios continious delivery, mobile continious integration, mobile continious delivery, jenkins alternative, cisimple alternative, buildozer alternative, greenhouse alternative" />
+		<meta name="author" content="bitrise">
 
-    <%= stylesheet_link_tag "normalize", "all" %>
-    <%= javascript_include_tag  "all" %>
-  </head>
+		<%= stylesheet_link_tag "normalize", "all" %>
+		<%= javascript_include_tag	"all" %>
+	</head>
 
-  <body class="<%= page_classes %>">
-    <a href="https://github.com/bitrise-io/devcenter"><img style="position: fixed; top: 0; right: 0; border: 0;" src="/images/fork_me_git.png" alt="Fork me on GitHub" data-canonical-src="https://s3.amazonaws.com/github/ribbons/forkme_right_white_ffffff.png"></a>
-    <div class="navigation">
-      <div class="wrapper">
-              <a href="/"><img id="logo" src="/images/bitrise_devc_logo.png" alt=""></img></a>
-        <div class="right">
-        </div>
-      </div>
-    </div>
-    <div class="wrapper page-body">
-      <div class="sidebar">
-        <ul>
-          <li><a href="/">Home</a></li>
-        </ul>
-        <h3>Getting started</h3>
-        <ul>
+	<body class="<%= page_classes %>">
+		<a href="https://github.com/bitrise-io/devcenter"><img style="position: fixed; top: 0; right: 0; border: 0;" src="/images/fork_me_git.png" alt="Fork me on GitHub" data-canonical-src="https://s3.amazonaws.com/github/ribbons/forkme_right_white_ffffff.png"></a>
+		<div class="navigation">
+			<div class="wrapper">
+							<a href="/"><img id="logo" src="/images/bitrise_devc_logo.png" alt=""></img></a>
+				<div class="right">
+				</div>
+			</div>
+		</div>
+		<div class="wrapper page-body">
+			<div class="sidebar">
+				<ul>
+					<li><a href="/">Home</a></li>
+				</ul>
+				<h3>Getting started</h3>
+				<ul>
 			<li><a href="/docs/what-is-bitrise.html">What is Bitrise?</a></li>
 			<li><a href="/docs/code-security.html">Code Security</a></li>
 			<li><a href="/docs/step-update.html">Update a Step in your Workflow</a></li>
-        </ul>
-        <h3>API</h3>
-        <ul>
-          <li><a href="/docs/api/build-trigger-api.html">Build Trigger API</a></li>
-        </ul>
-      </div>
-      <div class="content">
-        <%= yield %>
-        <%= disqus %>
-      </div>
-      <div class="clear">
-      </div>
-    </div>
-    <div class="footer">
-    <div class="wrapper">
-      <div class="footer-wrapper">
-        <div class="footer-col">
-          <div class="footer-col-inner">
-           <li class="top">
-            <img src="/images/footer1.png"></img>
-            <div class="title">Register an account</div>
-            </li>
-            <div class="separator"></div>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam sed posuere eros. Donec auctor aliquet varius. In lacinia,u</p>
-          </div>
-        </div>
-        <div class="footer-col">
-          <div class="footer-col-inner">
-            <li class="top">
-            <img src="/images/footer2.png"></img>
-            <div class="title2">Join the community</div>
-            </li>
-            <div class="separator"></div>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam sed posuere eros. Donec auctor aliquet varius. In lacinia, justo eu viverra luctus, orci libero ornare justo, sit amet condimentum metus libero vel justo. Morbi convallis blandit purus,</p>
-          </div>
-        </div>
-        <div class="clear"></div>
-        <div class="copyright">Copyright ©<%= Time.now.year %> Bitrise
-          <span class="footer-nav"><a href="http://bitrise.io">HOME</a></span>
-          <span class="footer-nav"><a href="/">DEVCENTER</a></span>
-        </div>
-      </div>
-    </div>
+				</ul>
+				<h3>API</h3>
+				<ul>
+					<li><a href="/docs/api/build-trigger-api.html">Build Trigger API</a></li>
+				</ul>
+			</div>
+			<div class="content">
+				<%= yield %>
+				<%= disqus %>
+			</div>
+			<div class="clear">
+			</div>
+		</div>
+		<div class="footer">
+		<div class="wrapper">
+			<div class="footer-wrapper">
+				<div class="footer-col">
+					<div class="footer-col-inner">
+					 <li class="top">
+						<img src="/images/footer1.png"></img>
+						<div class="title">Register an account</div>
+						</li>
+						<div class="separator"></div>
+						<p>
+							It takes about a minute to register a <strong>free</strong> account
+							on <a href="http://www.bitrise.io/" target="_blank">Bitrise</a>
+							and to start your app's first automated build!
+						</p>
+					</div>
+				</div>
+				<div class="footer-col">
+					<div class="footer-col-inner">
+						<li class="top">
+						<img src="/images/footer2.png"></img>
+						<div class="title2">Join the community</div>
+						</li>
+						<div class="separator"></div>
+						<p>
+							Every Step in Bitrise is open source.
+							You can find all of our repositories
+							on <a href="https://github.com/bitrise-io/blog" target="_blank">GitHub</a>.
+							In fact you can even fork <a href="https://github.com/bitrise-io/blog" target="_blank">this website</a>.
+							<br />
+							You're more than welcome to work with us to provide
+							the best build automation system.
+						</p>
+					</div>
+				</div>
+				<div class="clear"></div>
+				<div class="copyright">Copyright ©<%= Time.now.year %> Bitfall Kft.
+					<span class="footer-nav"><a href="http://bitrise.io">BITRISE</a></span>
+					<span class="footer-nav"><a href="http://blog.bitrise.io">BLOG</a></span>
+				</div>
+			</div>
+		</div>
 
 
-    </div>
+		</div>
 
 
-  </body>
+	</body>
 </html>
