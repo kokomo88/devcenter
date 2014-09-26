@@ -44,4 +44,17 @@ use established and stable open source projects as part of our infrastructure.
 
 ## KVM/QEMU
 
-We're also testing virtual machines running in QEMU.
+We're also testing virtual machines running under QEMU.
+
+At the moment it seems like a promising near future alternative but a few hacks are
+still required. This is something we can't afford as we try to provide a stable
+environment for building.
+
+Once these issues are resolved we'll perform more tests to determine
+the viability of a KVM/QEMU based solution.
+
+
+## VMware ESXi
+
+We have plans to test an ESXi based virtual machine system as well, but so far
+we haven't spent much time with it.
