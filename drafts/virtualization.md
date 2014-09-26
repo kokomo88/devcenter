@@ -5,6 +5,10 @@ title: Virtualization Solution - OS X
 Bitrise's builder depends on Virtualization - every build runs in it's own, clean Virtual Machine.
 After a build is finished the Virtual Machine is restored to a predefined state.
 
+You can see all the scripts we use to prepare our base virtual machine images / boxes in our [osx-box-bootstrap GitHub repository](https://github.com/bitrise-io/osx-box-bootstrap).
+By following the guide and using the scripts provided in the repository you can create
+your own virtual machine which will be identical to the ones used for Bitrise!
+
 
 # What Virtualization tools are used for Bitrise?
 
@@ -29,6 +33,7 @@ We use [vagrant](https://www.vagrantup.com/) for managing our virtual machines f
 
 
 # Experiments
+
 
 ## VirtualBox
 
