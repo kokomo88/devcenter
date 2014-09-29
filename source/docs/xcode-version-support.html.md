@@ -22,8 +22,8 @@ This means that in the OS X Virtual Machine (base box) two versions of Xcode are
 
 *As of writing:*
 
-* Xcode 6.0 (GM)
-* Xcode 5.1
+* Xcode 6.0.1
+* Xcode 5.1.1
 
 
 # Xcode Beta version support
