@@ -12,7 +12,7 @@ in the order you define in your Workflow, with the input parameters
 you define in your Workflow.
 
 
-# About the Step repository format
+## About the Step repository format
 
 The step repository format is described at
 the [StepLib project](https://github.com/steplib/steplib/tree/master/docs).
@@ -23,7 +23,7 @@ the [StepLib project](https://github.com/steplib/steplib/tree/master/docs).
 > with the help of the open source community.
 
 
-# Step Versioning
+## Step Versioning
 
 We advise to use "gitflow" (a really great
 cheat-sheet: [http://danielkummer.github.io/git-flow-cheatsheet/](http://danielkummer.github.io/git-flow-cheatsheet/)) for your steps.
@@ -40,7 +40,7 @@ Neither is enforced at the moment and so it's not required but
 these are the best practices we use and the ones we provide long term support for.
 
 
-# Environment Variables
+## Environment Variables
 
 Every step's input is stored in environment variables the step defines.
 
@@ -48,7 +48,7 @@ You can also use the Bitrise provided *Default Environment Variables*
 and the ones defined by previously executed steps.
 
 
-# Step Pipeline
+## Step Pipeline
 
 During the building process the steps defined in the Workflow are downloaded and executed
 in the order you define in your Workflow, with the input parameters
@@ -58,7 +58,7 @@ Steps can export environment variables which can be used by the
 subsequent steps.
 
 
-# How to debug your Step
+## How to debug your Step
 
 You can use our [Step Tester and Validator](https://github.com/bitrise-io/steps-step-tester-and-validator)
 step - just add it to a test workflow.
@@ -66,7 +66,7 @@ step - just add it to a test workflow.
 You can of course run your step locally or in a Virtual Machine which
 matches the one Bitrise uses ([Virtual Machines and Base Box updates](/docs/virtual-machine-updates.html))
 
-# Best Practice
+## Best Practice
 
 Include all your dependencies if possible.
 This will make your Step more stable (the code checked into your

@@ -10,7 +10,7 @@ These are our general Xcode version support / upgrade guidelines.
 we're open to discuss it and keep the support if it's reasonable.
 
 
-# Xcode version support guideline
+## Xcode version support guideline
 
 We have the last two major versions of Xcode preinstalled in the OS X Virtual Machines - as of writing: Xcode 5 and 6.
 
@@ -26,7 +26,7 @@ This means that in the OS X Virtual Machine (base box) two versions of Xcode are
 * Xcode 5.1.1
 
 
-# Xcode Beta version support
+## Xcode Beta version support
 
 When the next Xcode major version's first Beta is available we'll remove the oldest major version
 and instead install the new major version's beta versions until the first official version comes out.
@@ -38,13 +38,13 @@ until the first non beta version is available (usually the GM version).
 This means that a major version of Xcode is supported for about 2 years (with Apple's current update schedule).
 
 
-# iOS Simulator version support
+## iOS Simulator version support
 
 All the iOS Simulator versions which can be installed
 through *Xcode -> Preferences -> Downloads* are installed and available.
 
 
-# xctool support
+## xctool support
 
 We try to always include the latest version of [xctool](https://github.com/facebook/xctool)
 in our OS X VMs.
@@ -60,12 +60,12 @@ with the content:
 
 ## xctool Xcode 6 support
 
-Right now xctool doesn't support Xcode 6 in it's latest release version.
+Right now xctool doesn't support Xcode 6 in its latest release version.
 We'll [keep an eye](https://github.com/facebook/xctool/issues/380) on this issue
 and we'll update the preinstalled xctool in our VMs when the new release gets available.
 
 
-# Tips and tricks
+## Tips and tricks
 
 We install our Xcodes into a /Applications/Xcodes folder with the Xcode app's major version as a postfix.
 

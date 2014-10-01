@@ -5,7 +5,7 @@ title: Virtual Machines and Base Box updates
 # Base Box
 
 The Base Box is a virtual machine image we use for running your builds.
-Every build runs in it's own virtual machine and the virtual machine is
+Every build runs in its own virtual machine and the virtual machine is
 rolled back to a saved state (the base box state) after the build finishes.
 
 This way **your builds are always protected** by changes made by others' and
@@ -37,7 +37,7 @@ Our current Base Box contains the following programs preinstalled:
   * Ruby 2.1.2 and 2.1.3 installed, 2.1.3 is set as default
   * [CocoaPods](http://cocoapods.org/) installed for the default Ruby version
 
-# Update Frequency
+## Update Frequency
 
 We tend to update our base Virtual Machine images (boxes) every two week.
 The box update includes updates for the listed programs and for the OS.
@@ -47,7 +47,7 @@ keep the base system up-to-date.
 
 These patches include:
 
-* important program updated (for example xctool was not compatible with
+* important program updates (for example xctool was not compatible with
   Xcode 6 when the first official Xcode 6 version was published,
   we issued a box patch to update xctool when the Xcode 6 support arrived)
 * CococaPods, Homebrew and other dependency manager database updates

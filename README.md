@@ -1,4 +1,4 @@
 Bitrise DevCenter
 ==================
 
-URL: http://devcenter.bitrise.io/
+Website: http://devcenter.bitrise.io/
