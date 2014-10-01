@@ -53,3 +53,8 @@ These patches include:
 * CococaPods, Homebrew and other dependency manager database updates
   to make it faster for you to install dependencies or switch versions
   of dependencies.
+
+## Last update
+
+The base box on the Bitrise worker servers were last
+updated at **Sept. 30, 2014**.
