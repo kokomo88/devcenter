@@ -37,7 +37,7 @@ Our current Base Box contains the following programs preinstalled:
   * Ruby 2.1.2 and 2.1.3 installed, 2.1.3 is set as default
   * [CocoaPods](http://cocoapods.org/) installed for the default Ruby version
 
-# Update Frequency
+## Update Frequency
 
 We tend to update our base Virtual Machine images (boxes) every two week.
 The box update includes updates for the listed programs and for the OS.
