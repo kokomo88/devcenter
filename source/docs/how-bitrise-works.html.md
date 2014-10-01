@@ -38,7 +38,7 @@ you define in your Workflow.
     so your code won't fall into the wrong hands.
 
 
-# Feedback
+## Feedback
 
 We would really love to hear what
 you think about Bitrise. On every Bitrise page you can find

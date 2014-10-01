@@ -14,7 +14,7 @@ With the Build Trigger API you can integrate your app's building
 with your other services.
 
 
-# How to start a Build by calling the Trigger API?
+## How to start a Build by calling the Trigger API?
 
 You have to call your build trigger with a POST request containing a "payload" parameter
 with a JSON string value.
@@ -51,4 +51,4 @@ You can find a **curl configurator** on **your app's Settings tab**.
 
 A base curl call would look like this (with a 1.0.0 *tag* build parameter):
 
-`$ curl http://www.bitrise.io/hook/[app-slug] --data-urlencode 'payload={"hook_info":{"type":"bitrise","api_token":"[app-api-token]"},"build_params":{"tag":"1.0.0"}}'`
+    $ curl http://www.bitrise.io/hook/[app-slug] --data-urlencode 'payload={"hook_info":{"type":"bitrise","api_token":"[app-api-token]"},"build_params":{"tag":"1.0.0"}}'
