@@ -6,7 +6,7 @@ title: Code Security
 # Every Build runs in a Virtual Machine
 
 To guarantee the security of your builds we use virtual machines for builds.
-**Every build runs in it's own virtual machine and we restore the whole
+**Every build runs in its own virtual machine and we restore the whole
 virtual machine to a predefined state after the build finishes**, erasing
 every file your build uses and every change you make during your build.
 
