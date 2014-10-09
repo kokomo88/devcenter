@@ -13,5 +13,6 @@ it [here](/docs/index.html).
 
 # Tutorials
 
+* [Create a simple Middleman project and connect it with Bitrise](/tutorials/middleman-project.html)
 * [HipChat message with build status](/tutorials/hipchat-message.html)
 * [Replace or download project resources](/tutorials/replace-project-resources.html)
