@@ -15,4 +15,4 @@ it [here](/docs/index.html).
 
 * [HipChat message with build status](/tutorials/hipchat-message.html)
 * [Replace or download project resources](/tutorials/replace-project-resources.html)
-* [Create a simple Middleman project and connect it with Bitrise](/tutorials/middleman-project.html)
+* [Auto Deploy your Middleman website with Bitrise](/tutorials/middleman-project.html)

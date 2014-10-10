@@ -1,5 +1,5 @@
 ---
-title: Create a simple Middleman project and connect it with Bitrise
+title: Auto Deploy your Middleman website with Bitrise
 ---
 
 # Create a simple Middleman project and connect it with Bitrise
