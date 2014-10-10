@@ -2,7 +2,7 @@
 title: Auto Deploy your Middleman website with Bitrise
 ---
 
-# Create a simple Middleman project and connect it with Bitrise
+# Auto Deploy your Middleman website with Bitrise
 
 This tutorial helps you create a basic project with Middleman and connect it with Bitrise. Just follow these steps in order:
 
