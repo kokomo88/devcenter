@@ -8,8 +8,8 @@ The Base Box is a virtual machine image we use for running your builds.
 Every build runs in its own virtual machine and the virtual machine is
 rolled back to a saved state (the base box state) after the build finishes.
 
-This way **your builds are always protected** by changes made by others' and
-your previous builds, you can use a **stable environment** to
+This way **your builds are always protected** by changes made by others and
+by your previous builds, you can use a **stable environment** to
 define your build workflow (no state persists between builds).
 
 The user which is used for the builds is configured with **passwordless sudo** enabled,
@@ -36,6 +36,12 @@ Our current Base Box contains the following programs preinstalled:
 * [RVM](http://rvm.io/)
   * Ruby 2.1.2 and 2.1.3 installed, 2.1.3 is set as default
   * [CocoaPods](http://cocoapods.org/) installed for the default Ruby version
+  
+*We have a special Step which reports all the installed program/compontent versions.
+Just add the **OS X System Information Reporter** step
+to your app's worklow (or you can create a separate test app
+for testing if you want to), run a build and check this
+step's output.*
 
 ## Update Frequency
 
