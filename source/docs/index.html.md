@@ -19,6 +19,7 @@ it [here](/tutorials/index.html).
 * [Code Security](/docs/code-security.html)
 * [Update a Step in your Workflow](/docs/step-update.html)
 * [Best Practices](/docs/best-practices.html)
+* [Setup a webhook to your app on Bitrise](/docs/setup-webhook.html)
 
 ## Developer Docs
 
