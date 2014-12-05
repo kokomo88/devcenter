@@ -18,8 +18,8 @@ and for other automation.
 
 **This is a guideline, not a rule documentation.**
 If you need older versions of a program or you know about a useful tool
-which would be beneficial for everyone to be pre-installed let us know,
-we're open to discuss it.
+which would be beneficial for everyone to be
+pre-installed [let us know](http://www.bitrise.io/contact){:target="_blank"}!
 
 
 ## Pre-installed component versions
@@ -28,22 +28,22 @@ The current Box OS X version is: **10.9.5 (Mavericks)**
 
 Our current Base Box contains the following programs preinstalled:
 
-* [Homebrew](http://brew.sh/): 0.9.5
+* [Homebrew](http://brew.sh/){:target="_blank"}: 0.9.5
 * git: 2.1.3
 * mercurial: 3.1.2
-* xctool: 0.2.1 *NOTE: we'll remove xctool in our next box update and will support it through Steps. You can read more about it in our [Xcode version support guideline](/docs/xcode-version-support.html)*
+* xctool: 0.2.1
 * go: 1.3.3
 * NodeJS: 0.10.33
 * NPM: 2.1.6
 * wget: 1.16
-* Xcode 5.1.1 (Build version 5B1008) and Xcode 6.1 (Build version 6A1052d) - for more information see the [Xcode version support guideline](/docs/xcode-version-support.html)
-* [RVM](http://rvm.io/): 1.26.0
+* Xcode 5.1.1 (Build version 5B1008) and Xcode 6.1 (Build version 6A1052d) - for more information see the [Xcode version support guideline](/docs/xcode-version-support.html){:target="_blank"}
+* [RVM](http://rvm.io/){:target="_blank"}: 1.26.0
   * Ruby 2.1.2, 2.1.3, 2.1.4 installed, 2.1.4 is set as default
-  * [CocoaPods](http://cocoapods.org/) installed for the default Ruby version: 0.34.4
+  * [CocoaPods](http://cocoapods.org/){:target="_blank"} installed for the default Ruby version: 0.34.4
   
 > You can find the OS X base box setup guide and automation scripts
 > we use for building our OS X virtual machine base box
-> in our [OS X Box Bootstrap repository](https://github.com/bitrise-io/osx-box-bootstrap),
+> in our [OS X Box Bootstrap repository](https://github.com/bitrise-io/osx-box-bootstrap){:target="_blank"},
 > so you can build your own virtual machine to match the ones used on Bitrise.*
   
 *We have a special Step which reports all the installed program / component versions.
@@ -62,8 +62,8 @@ The box update includes the latest updates for the listed programs and for the O
 and is usually performed during the weekend to not to interfere
 with your everyday business.
 
-Updates are always announced on our [blog](http://blog.bitrise.io/)
-and can be seen on [your Bitrise Dashboard](http://www.bitrise.io/dashboard)
+Updates are always announced on our [blog](http://blog.bitrise.io/){:target="_blank"}
+and can be seen on [your Bitrise Dashboard](http://www.bitrise.io/dashboard){:target="_blank"}
 at least a week before the update.
 
 
@@ -85,7 +85,18 @@ These patches include:
 ## Planned changes
 
 * We plan to remove Xcode 5 in our next virtual machine update
-* We might remove xctool, as described in our [Xcode version support guideline](/docs/xcode-version-support.html)
+* We'll pre-install [ansible](http://www.ansible.com/home){:target="_blank"} for easier environment setup; version: 1.8.1
+* We'll pre-install [nomad-cli](http://nomad-cli.com/){:target="_blank"} for easier Xcode provisioning profile management; version: 2.4.3
+* We'll pre-install Ruby 2.1.5 with RVM and set as default
+  * this also means that Cocoapods will be installed with this Ruby version (2.1.5)
+* OS X version upgrade: from Mavericks (10.9) to Yosemite (10.10)
+* git upgrade to: 2.2.0
+* Mercurial upgrade to: 3.2.1
+* NPM upgrade to: 2.1.10
+* RVM upgrade to: 1.26.3
+* Cocoapods upgrade to: 0.35.0
+* **Xcode 5 will be removed**
+* **Xcode 6 upgrade** to: Xcode 6.1.1 (Build version 6A2008a)
 
 
 ## Last update
@@ -96,9 +107,13 @@ updated at **Nov. 1, 2014**.
 
 ## Next planned update
 
-We don't have plans for updating our virtual machines until
-a core component changes (for example a new Xcode version gets released).
+The new virtual machine with the changes described in the **Planned changes** section
+is planned to be released at **Dec. 13, 2014**.
 
 As usual we'll announce every scheduled virtual machine update
-in our [blog](http://blog.bitrise.io/) which is also
-shown on your [dashboard](http://www.bitrise.io/dashboard).
+in our [blog](http://blog.bitrise.io/){:target="_blank"} which is also
+shown on your [dashboard](http://www.bitrise.io/dashboard){:target="_blank"}.
+
+> If you need older versions of a program or you know about a useful tool
+> which would be beneficial for everyone to be
+> pre-installed [let us know](http://www.bitrise.io/contact){:target="_blank"}!
