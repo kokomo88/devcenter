@@ -36,6 +36,8 @@ Our current Base Box contains the following programs preinstalled:
 * NodeJS: 0.10.33
 * NPM: 2.1.10
 * wget: 1.16
+* [ansible](http://www.ansible.com/home){:target="_blank"}: 1.8.1
+* [nomad-cli](http://nomad-cli.com/){:target="_blank"}: 2.4.3
 * Xcode: 6.1.1 (Build version 6A2008a) - for more information see the [Xcode version support guideline](/docs/xcode-version-support.html){:target="_blank"}
 * [RVM](http://rvm.io/){:target="_blank"}: 1.26.3
   * Ruby 2.1.2, 2.1.3, 2.1.4, 2.1.5 installed, 2.1.5 is set as default
