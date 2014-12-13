@@ -18,26 +18,26 @@ When a new major version of Xcode gets released we keep supporting the previous 
 
 For example: with Apple's versioning the major version is Xcode 6 and the first significant patch is Xcode 6.1 and we kept Xcode 5 installed on the Virtual Machines before Xcode 6.1 was released.
 
-Minor version support:
+**Minor version support:**
 
-For all major versions the Virtual Machines contains the latest minor versions which are officially supported by Apple to build apps for App Store submissions.
+For all major versions the Virtual Machines contain the latest minor versions which are officially supported by Apple to build apps for App Store submissions.
 
-As of writing the following Xcode versions are installed on the builder virtual machines:
+**As of writing the following Xcode versions are installed** on the builder virtual machines:
 
-* Xcode 6.1 (Build version 6A1052d)
-* Xcode 5.1.1 (Build version 5B1008) - *planned to be removed in the next virtual machine update*
+* Xcode 6.1.1 (Build version 6A2008a)
 
 
 ## Xcode update schedule
 
-The pre-installed Xcodes are updated as part of our Virtual Machine base box updates, you can read more about the update schedule [here](/docs/virtual-machine-updates.html)).
+The pre-installed Xcodes are updated as part of our Virtual Machine base box updates, you can read more about the update schedule [here](/docs/virtual-machine-updates.html).
 
 
 ## Xcode Beta version support
 
 When the next Xcode major version's first Beta will be available we'll start supporting the new major version's beta versions until the first official, stable version comes out.
 
-*Only the latest beta version is supported.*
+*Only the latest beta version is supported and the latest stable Xcode version
+is always pre-installed on the Virtual Machines.*
 
 
 ## iOS Simulator version support
@@ -48,38 +48,22 @@ through *Xcode -> Preferences -> Downloads* are installed and available.
 
 ## xctool support
 
-We try to always include the latest version of [xctool](https://github.com/facebook/xctool)
+We try to always include the latest version of [xctool](https://github.com/facebook/xctool){:target="_blank"}
 in our OS X VMs.
 
-
-## xctool support
-
-The latest [xctool](https://github.com/facebook/xctool) version ([0.2.1](https://github.com/facebook/xctool/releases/tag/v0.2.1)) has major unit testing issues with our dual Xcode setup.
-
-This is a [know](https://github.com/facebook/xctool/issues/380){:target="_blank"}
-[issue](https://github.com/facebook/xctool/issues/431){:target="_blank"},
-and we plan to solve it by removing the pre-installed xctool from our virtual machines
-and instead support the installation of xctool as part of
-our Xcode builder steps or as a new, separate step unless this bug gets fixed.
-
-The proposed fix right now is to add a **Bash Script Runner** step
-to your workflow, right before your Xcode build, analyze, unit test or archive step
-with the following content:
-
-    #!/bin/bash
-    brew update && brew uninstall xctool && brew install xctool --build-from-source
-
-Be advised this can be a time consuming step (~ 100 seconds)
-and because you usually don't need the
-nicely formatted logs for your unit tests you can just use the default
-*xcodebuild* builder instead of xctool for your unit tests.
-
-At the moment xctool is pre-installed on the virtual machines and is installed through [homebrew](http://brew.sh/) and so if you need to update it
-to be sure you have the latest version you can add a [Bash Script Step](https://github.com/bitrise-io/steps-bash-script)
+xctool is installed through [homebrew](http://brew.sh/){:target="_blank"} and so if you need to update it
+to be sure you have the latest version you can add a [Bash Script Step](https://github.com/bitrise-io/steps-bash-script){:target="_blank"}
 with the content:
 
     #!/bin/bash
     brew update && brew upgrade xctool
+
+*If you need the latest xctool version compiled from source
+you can do it by adding a **Bash Script Runner** step
+to your workflow, right before your first Xcode build, analyze, unit test or archive step, with the following content:*
+
+    #!/bin/bash
+    brew update && brew uninstall xctool && brew install xctool --build-from-source
 
 
 ## Technical details
