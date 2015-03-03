@@ -12,10 +12,14 @@ is a good place to start reading and learning about the service.
 If you're looking for the Bitrise Tutorials you can find
 it [here](/tutorials/index.html).
 
-# Documentation
+# FAQ
 
 * [What Is Bitrise](/docs/what-is-bitrise.html)
 * [How Bitrise Works](/docs/how-bitrise-works.html)
+* [Frequent iOS issues](/docs/frequent-ios-issues.html)
+
+# Documentation
+
 * [Code Security](/docs/code-security.html)
 * [Bitrise App Deployment](/docs/bitrise-app-deployment.html)
 * [Update a Step in your Workflow](/docs/step-update.html)
