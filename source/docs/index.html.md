@@ -25,8 +25,7 @@ it [here](/tutorials/index.html).
 ## Developer Docs
 
 * [Step Development](/docs/step-dev.html)
-* [Virtual Machines and Base Box updates](/docs/virtual-machine-updates.html)
-* [Xcode version support guideline](/docs/xcode-version-support.html)
+* [Virtual Machines: pre-installed tools and update schedule](/docs/virtual-machine-updates.html)
 
 ### API
 
