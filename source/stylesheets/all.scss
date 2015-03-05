@@ -255,6 +255,10 @@ h3 {
     width: 50%;
     float: left;
 
+    @media only screen and (max-width: 768px) {
+      width: auto;
+      float: none;
+    }
 
     .footer-col-inner {
       margin: 35px 50px;
@@ -323,13 +327,6 @@ h3 {
   .footer-nav {
     display: inline-block;
     padding: 0 0 0 10px;
-  }
-
-  .footer-wrapper {
-    width: 90%;
-    margin: 0 auto;
-    padding-right: 0px;
-    margin-right: 0px;
   }
 
 }
