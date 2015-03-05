@@ -12,9 +12,9 @@ Additionally you most likely want to minimize the number of tools,
 configurations and manual steps required to achieve your automated
 development workflow.
 
-To make the whole process as easy as possible and still flexible
+To make the whole process as easy as possible (and still flexible
 enough to support a broad range of tasks you might
-want to perform as part of your automation
+want to perform as part of your automation)
 was one of the fundamental principles when we
 started [Bitrise.io](https://www.bitrise.io/){:target="_blank"}.
 
