@@ -23,7 +23,7 @@ you define in your Workflow.
 3. Environment Preparations: once we find a suitable machine a Virtual Machine will be
     provisioned and prepared to run the build, build specific environment variables
     are set so you can use these in your steps - for example to
-    [send a HipChat message with the build's detalis page url](tutorials/hipchat-message.html).
+    [send a HipChat message with the build's detalis page url](/tutorials/hipchat-message.html).
 4. The workflow steps are executed in the same order as you
     define on the workflow page of your application,
     from top to bottom. *(You can also modify the order of the steps by dragging them)*
