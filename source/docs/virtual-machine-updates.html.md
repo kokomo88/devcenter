@@ -54,6 +54,8 @@ Just add the **OS X System Information Reporter** step
 to your app's workflow (or you can create a separate app on Bitrise
 for this purpose), run a build and check this step's output.*
 
+You can find the Virtual Machine changelog [here](/docs/vm-box-changelog.html).
+
 
 ## Xcode version support guideline
 
