@@ -17,6 +17,7 @@ it [here](/tutorials/index.html).
 * [What Is Bitrise](/docs/what-is-bitrise.html)
 * [How Bitrise Works](/docs/how-bitrise-works.html)
 * [Frequent iOS issues](/docs/frequent-ios-issues.html)
+* [Select the Xcode version for the build](/docs/select-xcode-version.html)
 
 # Documentation
 
