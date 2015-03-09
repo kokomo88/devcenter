@@ -5,6 +5,18 @@ title: Frequent iOS issues
 # Frequent iOS issues
 
 
+## Pod install fails at validation
+
+Bitrise will try to `pod install` every *Podfile* it can find
+in the repository you specify.
+
+**Make sure:**
+
+* If you have more than one Podfile in your repository make sure that all can be pod installed!
+* Make sure that the Podfile is in the same directory as your Xcode project file (.xcodeproj).
+* Bitrise will try to scan every active *branch* of your repository during the validation. If you have older / unused branches which also include a Podfile you should check those branches and Podfiles too, or remove the branches from your repository if you don't use them anymore.
+
+
 ## Works in local but not on Bitrise
 
 Error might be **ld: file not found**, the path contains *DerivedData*, with no other error message to help:
@@ -76,3 +88,36 @@ setup into Bitrise.
 To fix the issue you have to remove the keychain selection
 configurations from your Xcode project settings because
 Bitrise uses dynamic, temporary keychains for code signing.
+
+
+## App built on Bitrise can't be installed on test devices
+
+**Description:**
+
+The app was built successfully on Bitrise and deployed with
+either the Bitrise iOS App Deployment step or to a 3rd party
+service like HockeyApp, but it can't be installed on real
+test devices.
+
+**Solution:**
+
+The problem is most likely related to the *entitlements* file included in your
+Xcode project (which is also included in the built .ipa iOS app file
+after a successful build in the *embedded.mobileprovision* file inside the .ipa archive).
+
+Make sure that all of the following items are included
+in the *entitlements* Plist file:
+
+* application-identifier
+* get-task-allow
+* keychain-access-groups
+
+Additional required items if you build your app with an *Enterprise
+Provisioning Profile*:
+
+* com.apple.developer.team-identifier
+
+***Note:*** Apps built with *App Store distribution Provisioning Profiles*
+**can't be installed** on test devices, only through Apple's
+iTunes Connect system!
+
