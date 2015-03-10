@@ -4,7 +4,13 @@ title: Virtual Machines / Box changelog
 
 # Virtual Machines / Box changelog
 
-## March 17, 2015
+## March 10, 2015
+
+* git: 2.3.1 -> 2.3.2
+* xctool: 0.2.2 -> 0.2.3
+
+
+## March 7, 2015
 
 * OS X: 10.10.1 -> 10.10.2
 * Xcode naming change: instead of storing Xcodes with the version number included in the Xcode app's name we'll use a couple of state indicators:

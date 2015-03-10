@@ -40,7 +40,7 @@ Our current Base Box contains the following programs preinstalled:
 * [nomad-cli](http://nomad-cli.com/){:target="_blank"}: 2.4.6
 * Xcode:
   * 6.1.1 (Build version 6A2008a)
-  * 6.3 beta 2
+  * 6.3 beta 2 (Build version 6D532l)
 * [RVM](http://rvm.io/){:target="_blank"}: 1.26.10
   * Ruby 2.1.5 installed with RVM, 2.1.5 is set as default
   * [CocoaPods](http://cocoapods.org/){:target="_blank"}: 0.35.0 - pre-installed for the default Ruby version
@@ -142,12 +142,12 @@ unless it's really necessary.
 ## Last update
 
 The base box on the Bitrise worker servers were last
-updated at **March 7, 2015**.
+updated at **March 10, 2015**.
 
 
 ## Next planned update
 
-We'll update our Virtual Machines on **Saturday, March 14, 2015**.
+We'll update our Virtual Machines on **Saturday, March 21, 2015**.
 
 
 ### Version changes
