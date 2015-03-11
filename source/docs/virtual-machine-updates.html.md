@@ -152,7 +152,8 @@ We'll update our Virtual Machines on **Saturday, March 21, 2015**.
 
 ### Version changes
 
-Next version change list will be announced soon.
+* Xcode 6.1.1 -> Xcode 6.2
+* Other tool version changes will be announced soon, once the new Virtual Machine is prepared and tested.
 
 
 > If you need older versions of a program or you know about a useful tool
