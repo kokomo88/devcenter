@@ -16,3 +16,7 @@ it [here](/docs/index.html).
 * [HipChat message with build status](/tutorials/hipchat-message.html)
 * [Replace or download project resources](/tutorials/replace-project-resources.html)
 * [Auto Deploy your Middleman website with Bitrise](/tutorials/middleman-project.html)
+* [Running Xcode unit tests with Bitrise](/tutorials/xcode-unit-test.html)
+* [Running Kiwi BDD unit tests with Bitrise](/tutorials/xcode-unit-test-kiwi.html)
+* [Running KIF tests with Bitrise](/tutorials/xcode-unit-test-kif.html)
+* [Running Appium tests with Bitrise](/tutorials/appium-test-step.html)
