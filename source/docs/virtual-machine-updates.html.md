@@ -29,9 +29,9 @@ The current Box OS X version is: **10.10.2 (Yosemite)**
 Our current Base Box contains the following programs preinstalled:
 
 * [Homebrew](http://brew.sh/){:target="_blank"}: 0.9.5
-* git: 2.3.1
+* git: 2.3.2
 * mercurial: 3.3
-* xctool: 0.2.2
+* xctool: 0.2.3
 * go: 1.4.2
 * NodeJS: v0.12.0
 * NPM: 2.5.1
@@ -147,13 +147,15 @@ updated at **March 10, 2015**.
 
 ## Next planned update
 
-We'll update our Virtual Machines on **Saturday, March 21, 2015**.
+We'll update our Virtual Machines on **Saturday, March 14, 2015**.
 
 
 ### Version changes
 
-* Xcode 6.1.1 -> Xcode 6.2
-* Other tool version changes will be announced soon, once the new Virtual Machine is prepared and tested.
+* Xcode 6.1.1 -> Xcode 6.2 (6C131e)
+* mercurial: 3.3 -> 3.3.2
+* wget: 1.16.2 -> 1.16.3
+* CocoaPods: 0.35.0 -> 0.36.0
 
 
 > If you need older versions of a program or you know about a useful tool
