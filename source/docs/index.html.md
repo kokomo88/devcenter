@@ -12,11 +12,17 @@ is a good place to start reading and learning about the service.
 If you're looking for the Bitrise Tutorials you can find
 it [here](/tutorials/index.html).
 
-# Documentation
+# FAQ
 
 * [What Is Bitrise](/docs/what-is-bitrise.html)
 * [How Bitrise Works](/docs/how-bitrise-works.html)
+* [Frequent iOS issues](/docs/frequent-ios-issues.html)
+* [Select the Xcode version for the build](/docs/select-xcode-version.html)
+
+# Documentation
+
 * [Code Security](/docs/code-security.html)
+* [Bitrise App Deployment](/docs/bitrise-app-deployment.html)
 * [Update a Step in your Workflow](/docs/step-update.html)
 * [Best Practices](/docs/best-practices.html)
 * [Setup a webhook for your app on Bitrise](/docs/setup-webhook.html)
@@ -24,8 +30,7 @@ it [here](/tutorials/index.html).
 ## Developer Docs
 
 * [Step Development](/docs/step-dev.html)
-* [Virtual Machines and Base Box updates](/docs/virtual-machine-updates.html)
-* [Xcode version support guideline](/docs/xcode-version-support.html)
+* [Virtual Machines: pre-installed tools and update schedule](/docs/virtual-machine-updates.html)
 
 ### API
 
