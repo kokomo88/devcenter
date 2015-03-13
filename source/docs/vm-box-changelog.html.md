@@ -4,6 +4,15 @@ title: Virtual Machines / Box changelog
 
 # Virtual Machines / Box changelog
 
+
+## March 14, 2015 (planned)
+
+* Xcode 6.1.1 -> Xcode 6.2 (6C131e)
+* mercurial: 3.3 -> 3.3.2
+* wget: 1.16.2 -> 1.16.3
+* CocoaPods: 0.35.0 -> 0.36.0
+
+
 ## March 10, 2015
 
 * git: 2.3.1 -> 2.3.2
