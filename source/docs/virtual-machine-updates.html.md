@@ -29,22 +29,24 @@ The current Box OS X version is: **10.10.2 (Yosemite)**
 Our current Base Box contains the following programs preinstalled:
 
 * [Homebrew](http://brew.sh/){:target="_blank"}: 0.9.5
-* git: 2.3.1
-* mercurial: 3.3
-* xctool: 0.2.2
+* git: 2.3.2
+* mercurial: 3.3.2
+* xctool: 0.2.3
 * go: 1.4.2
 * NodeJS: v0.12.0
 * NPM: 2.5.1
-* wget: 1.16.2
+* wget: 1.16.3
 * [ansible](http://www.ansible.com/home){:target="_blank"}: 1.8.4
 * [nomad-cli](http://nomad-cli.com/){:target="_blank"}: 2.4.6
 * Xcode:
-  * 6.1.1 (Build version 6A2008a)
-  * 6.3 beta 2 (Build version 6D532l)
+  * stable: 6.2 (Build version 6C131e)
+  * beta: 6.3 beta 2 (Build version 6D532l)
 * [RVM](http://rvm.io/){:target="_blank"}: 1.26.10
   * Ruby 2.1.5 installed with RVM, 2.1.5 is set as default
-  * [CocoaPods](http://cocoapods.org/){:target="_blank"}: 0.35.0 - pre-installed for the default Ruby version
+  * [CocoaPods](http://cocoapods.org/){:target="_blank"}: 0.36.0 - pre-installed for the default Ruby version
 * [XcodeUnitTestMiniserver](https://github.com/bitrise-io/xcodebuild-unittest-miniserver){:target="_blank"}: 1.2.0
+
+You can find the **Virtual Machine changelog** [here](/docs/vm-box-changelog.html).
   
 > You can find the OS X base box setup guide and automation scripts
 > we use for building our OS X virtual machine base box
@@ -55,8 +57,6 @@ Our current Base Box contains the following programs preinstalled:
 Just add the **OS X System Information Reporter** step
 to your app's workflow (or you can create a separate app on Bitrise
 for this purpose), run a build and check this step's output.*
-
-You can find the **Virtual Machine changelog** [here](/docs/vm-box-changelog.html).
 
 
 ## Xcode version support guideline
@@ -142,7 +142,7 @@ unless it's really necessary.
 ## Last update
 
 The base box on the Bitrise worker servers were last
-updated at **March 10, 2015**.
+updated at **March 14, 2015**.
 
 
 ## Next planned update
@@ -152,8 +152,8 @@ We'll update our Virtual Machines on **Saturday, March 21, 2015**.
 
 ### Version changes
 
-* Xcode 6.1.1 -> Xcode 6.2
-* Other tool version changes will be announced soon, once the new Virtual Machine is prepared and tested.
+* Will be announced soon.
+* *Platform note*: we'll increase the RAM of the virtual machines from 3GB to 4GB 
 
 
 > If you need older versions of a program or you know about a useful tool
