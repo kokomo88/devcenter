@@ -42,17 +42,17 @@ Our current Base Box contains the following programs preinstalled:
   * stable: 6.2 (Build version 6C131e)
   * beta: 6.3 beta 2 (Build version 6D532l)
 * [RVM](http://rvm.io/){:target="_blank"}: 1.26.10
-  * Ruby 2.1.5 installed with RVM, 2.1.5 is set as default
+  * Ruby 2.1.5p273 installed with RVM, 2.1.5 is set as default
   * [CocoaPods](http://cocoapods.org/){:target="_blank"}: 0.36.0 - pre-installed for the default Ruby version
 * [XcodeUnitTestMiniserver](https://github.com/bitrise-io/xcodebuild-unittest-miniserver){:target="_blank"}: 1.2.0
 
 You can find the **Virtual Machine changelog** [here](/docs/vm-box-changelog.html).
-  
+
 > You can find the OS X base box setup guide and automation scripts
 > we use for building our OS X virtual machine base box
 > in our [OS X Box Bootstrap repository](https://github.com/bitrise-io/osx-box-bootstrap){:target="_blank"},
 > so you can build your own virtual machine to match the ones used on Bitrise.
-  
+
 *We have a special Step which reports all the installed program / component versions.
 Just add the **OS X System Information Reporter** step
 to your app's workflow (or you can create a separate app on Bitrise
@@ -152,8 +152,9 @@ We'll update our Virtual Machines on **Saturday, March 21, 2015**.
 
 ### Version changes
 
-* Will be announced soon.
-* *Platform note*: we'll increase the RAM of the virtual machines from 3GB to 4GB 
+* Xcode 6.3 beta 2 (Build version 6D532l) -> Xcode 6.3 beta 3 (Build version 6D543q)
+* git: 2.3.2 -> 2.3.2
+* *Platform note*: we'll increase the RAM of the virtual machines from 3GB to 4GB
 
 
 > If you need older versions of a program or you know about a useful tool

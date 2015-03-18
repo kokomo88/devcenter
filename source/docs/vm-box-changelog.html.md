@@ -1,11 +1,18 @@
 ---
-title: Virtual Machines / Box changelog
+title: Virtual Machines / Box change log
 ---
 
-# Virtual Machines / Box changelog
+# Virtual Machines / Box change log
 
 
-## March 14, 2015 (planned)
+## March 21, 2015
+
+* Xcode 6.3 beta 2 (Build version 6D532l) -> Xcode 6.3 beta 3 (Build version 6D543q)
+* git: 2.3.2 -> 2.3.2
+* *Platform note*: we'll increase the RAM of the virtual machines from 3GB to 4GB
+
+
+## March 14, 2015
 
 * Xcode 6.1.1 -> Xcode 6.2 (6C131e)
 * mercurial: 3.3 -> 3.3.2
