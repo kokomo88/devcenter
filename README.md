@@ -14,3 +14,9 @@ Website: http://devcenter.bitrise.io/
 * events page
 * how to set Provisioning Profile and Certificate
 * how to add a git hook / build trigger hook to GitHub / Bitbucket / custom repo
+
+# Dev setup
+
+* clone this repository
+* bundle install
+* bundle exec middleman
