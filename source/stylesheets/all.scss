@@ -226,13 +226,19 @@ h3 {
 	}
 
 	.content {
-
 		@media only screen and (max-width: ($wrapper-collapse-width + 2 * $sidebar-side-padding)) {
 			width: 100%;
 			max-width: 100%;
 			padding: 40px;
 
 		}
+
+		@media only screen and (max-width: 480px) {
+			margin-top: 0;
+			border-top: none;
+			padding: 20px;
+
+		}		
 
 		max-width: 760px;
 		margin-top: 35px;
@@ -328,6 +334,10 @@ h3 {
 }
 
 .footer {
+	@media only screen and (max-width: 480px) {
+		margin-top: 0;
+	}
+
 	background-color: #e2e2e1;
 	padding: 20px 40px;
 	font-weight: 400;
