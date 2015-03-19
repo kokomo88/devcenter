@@ -153,7 +153,7 @@ We'll update our Virtual Machines on **Saturday, March 21, 2015**.
 ### Version changes
 
 * Xcode 6.3 beta 2 (Build version 6D532l) -> Xcode 6.3 beta 3 (Build version 6D543q)
-* git: 2.3.2 -> 2.3.2
+* git: 2.3.2 -> 2.3.3
 * *Platform note*: we'll increase the RAM of the virtual machines from 3GB to 4GB
 
 
