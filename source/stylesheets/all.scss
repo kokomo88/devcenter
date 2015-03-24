@@ -87,6 +87,9 @@ h3 {
 }
 
 .navigation {
+	@media only screen and (max-width: 480px) {
+		padding: 0 10px;
+	}	
 	top: 0px;
 	width: 100%;
 	height: 80px;
