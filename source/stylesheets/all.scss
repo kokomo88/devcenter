@@ -94,6 +94,12 @@ h3 {
 	background-color: #3cc1a7;
 
 	#logo {
+		@media only screen and (max-width: 480px) {
+			width: 200px;
+			height: 17px;
+			margin-top: 30px;
+			margin-left: 0;
+		}		
 		width: 296px;
 		height: 25px;
 		z-index: 1000;
@@ -110,7 +116,11 @@ h3 {
 			}
 
 			@media only screen and (max-width: 620px) {
-				display: none;
+				margin-right: 0px;
+
+				span {
+					display: none;
+				}
 			}
 
 			line-height: 80px;
