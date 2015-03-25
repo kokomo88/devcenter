@@ -147,7 +147,7 @@ updated at **March 21, 2015**.
 
 ## Next planned update
 
-We'll update our Virtual Machines on **Saturday, March 28, 2015**.
+We'll update our Virtual Machines on **Saturday, April 4, 2015**.
 
 
 ### Version changes
