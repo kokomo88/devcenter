@@ -17,6 +17,7 @@
 		<%= stylesheet_link_tag "normalize", "all" %>
 		<%= stylesheet_link_tag '//fonts.googleapis.com/css?family=Source+Code+Pro' %>
 		<%= stylesheet_link_tag '//cloud.typography.com/7981312/721124/css/fonts.css' %>
+		<%= stylesheet_link_tag '//fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,400,700,300,600' %>
 		<%= javascript_include_tag	"all" %>
 	</head>
 
@@ -26,6 +27,7 @@
 			<div class="wrapper">
 							<a href="/"><img id="logo" src="/images/bitrise_devc_logo.png" alt=""></img></a>
 				<div class="right">
+					<a href="http://bitrise.io" class="white">Register <span>for free</span></a>
 				</div>
 			</div>
 		</div>
@@ -63,51 +65,18 @@
 			</div>
 		</div>
 		<div class="footer">
-		<div class="wrapper">
-			<div class="footer-wrapper">
-				<div class="footer-col">
-					<div class="footer-col-inner">
-					 <li class="top">
-						<img src="/images/footer1.png"></img>
-						<div class="title">Register an account</div>
-						</li>
-						<div class="separator"></div>
-						<p>
-							It takes about a minute to register a <strong>free</strong> account
-							on <a href="http://www.bitrise.io/" target="_blank">Bitrise</a>
-							and to start your app's first automated build!
-						</p>
-					</div>
-				</div>
-				<div class="footer-col">
-					<div class="footer-col-inner">
-						<li class="top">
-						<img src="/images/footer2.png"></img>
-						<div class="title2">Join the community</div>
-						</li>
-						<div class="separator"></div>
-						<p>
-							Every Step in Bitrise is open source.
-							You can find all of our repositories
-							on <a href="https://github.com/bitrise-io/blog" target="_blank">GitHub</a>.
-							In fact you can even fork <a href="https://github.com/bitrise-io/blog" target="_blank">this website</a>.
-							<br />
-							You're more than welcome to work with us to provide
-							the best build automation system.
-						</p>
-					</div>
-				</div>
-				<div class="clear"></div>
-				<div class="copyright">Copyright ©<%= Time.now.year %> Bitfall Kft.
-					<span class="footer-nav"><a href="http://bitrise.io">BITRISE</a></span>
-					<span class="footer-nav"><a href="http://blog.bitrise.io">BLOG</a></span>
-				</div>
+			<div class="left-menu">
+				<p>Copyright © <%= Time.now.year %> Bitfall Kft.</p>
+				<p class="slash">/</p>
+				<a href="http://bitrise.io">BITRISE</a>
+				<p class="slash">/</p>
+				<a href="http://blog.bitrise.io">BLOG</a>
 			</div>
+			<div class="right-menu">
+				<a href="https://github.com/bitrise-io" class="github"></a>
+				<a href="https://twitter.com/bitrise" class="twitter"></a>
+			</div>
+			<div class="clear"></div>
 		</div>
-
-
-		</div>
-
-
 	</body>
 </html>
