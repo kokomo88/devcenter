@@ -1,14 +1,14 @@
 ---
-title: Bitrise Unit Test Step With Kif
+title: Bitrise Unit Test Step With KIF
 ---
 
-# Bitrise Xcode: Unit Test Step With Kif
+# Bitrise Xcode: Unit Test Step With KIF
 
 As described in the [Unit Test section](/tutorials/xcode-unit-test.html) you can simply run the unit tests you created for your project during every or branch specific builds on Bitrise just by adding the ***Xcode: Unit Test*** step to your workflow. 
 
-Running unit tests that were created using [Kif](https://github.com/kif-framework/KIF) is not much more complex.
+Running unit tests that were created using [KIF](https://github.com/kif-framework/KIF) is not much more complex.
 
-[Kif](https://github.com/kif-framework/KIF) can be installed using CocoaPods and after installing it you can simply run the tests you created the same way as before.
+[KIF](https://github.com/kif-framework/KIF) can be installed using CocoaPods and after installing it you can simply run the tests you created the same way as before.
 
 >Remember to set the target for the pod in your podfile 
     
@@ -21,7 +21,7 @@ Running unit tests that were created using [Kif](https://github.com/kif-framewor
     link_with 'SuchApp', 'SuchAppTests'
     pod 'KIF'
 
-This means you simply have to add the ***Run CocoaPods install*** step [https://github.com/bitrise-io/steps-cocoapods-and-repository-validator](https://github.com/bitrise-io/steps-cocoapods-and-repository-validator) and after that step you can run the ***Xcode: Unit Test*** to run your [Kif](https://github.com/kif-framework/KIF) based tests.
+This means you simply have to add the ***Run CocoaPods install*** step [https://github.com/bitrise-io/steps-cocoapods-and-repository-validator](https://github.com/bitrise-io/steps-cocoapods-and-repository-validator) and after that step you can run the ***Xcode: Unit Test*** to run your [KIF](https://github.com/kif-framework/KIF) based tests.
 
 Just like at the ***Xcode Unit Test*** step if there were no errors during the test the Formatted Output will show the following message:
     
