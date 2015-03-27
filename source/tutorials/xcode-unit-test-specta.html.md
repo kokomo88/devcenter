@@ -1,24 +1,27 @@
 ---
-title: Bitrise Unit Test Step With Quick
+title: Bitrise Unit Test Step With Specta
 ---
 
-# Bitrise Xcode: Unit Test Step With Quick
+# Bitrise Xcode: Unit Test Step With Specta
 
 As described in the [Unit Test section](/tutorials/xcode-unit-test.html) you can simply run the unit tests you created for your project during every or branch specific builds on Bitrise just by adding the ***Xcode: Unit Test*** step to your workflow. 
 
-Running unit tests that were created using [Quick](https://github.com/Quick/Quick) is not much more complex. Also check out the [Quick Documentation](https://github.com/Quick/Quick/tree/master/Documentation) page for a setup guide on your local machine.
+Running unit tests that were created using [Specta](https://github.com/specta/specta) is not much more complex.
 
-[Quick](https://github.com/Quick/Quick) can be installed using CocoaPods and after installing it you can simply run the tests you created the same way as before.
+[Specta](https://github.com/specta/specta) can be installed using CocoaPods and after installing it you can simply run the tests you created the same way as before.
 
->Remember to add Quick - and Nimble (for the expect(...).to assertion syntax)
+>Remember to add Specta - and the other pods you would like to use
 
-    target 'MyTests' do
-        use_frameworks!
-        pod 'Quick'
-        pod 'Nimble'
+    target :MyAppTests do
+        pod 'Specta', '~> 0.4'
+        # pod 'Expecta',     '~> 0.3'   # expecta matchers
+        # pod 'OCMock',      '~> 2.2'   # OCMock
+        # pod 'OCHamcrest',  '~> 3.0'   # hamcrest matchers
+        # pod 'OCMockito',   '~> 1.0'   # OCMock
+        # pod 'LRMocky',     '~> 0.9'   # LRMocky
     end
 
-This means you simply have to add the ***Run CocoaPods install*** step [https://github.com/bitrise-io/steps-cocoapods-and-repository-validator](https://github.com/bitrise-io/steps-cocoapods-and-repository-validator) and after that step you can run the ***Xcode: Unit Test*** to run your [Quick](https://github.com/Quick/Quick) based tests.
+This means you simply have to add the ***Run CocoaPods install*** step [https://github.com/bitrise-io/steps-cocoapods-and-repository-validator](https://github.com/bitrise-io/steps-cocoapods-and-repository-validator) and after that step you can run the ***Xcode: Unit Test*** to run your [Specta](https://github.com/specta/specta) based tests.
 
 Just like at the ***Xcode: Unit Test*** step if there were no errors during the test the Formatted Output will show the following message:
     

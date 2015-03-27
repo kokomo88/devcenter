@@ -1,24 +1,22 @@
 ---
-title: Bitrise Unit Test Step With Quick
+title: Bitrise Unit Test Step With Subliminal
 ---
 
-# Bitrise Xcode: Unit Test Step With Quick
+# Bitrise Xcode: Unit Test Step With Subliminal
 
 As described in the [Unit Test section](/tutorials/xcode-unit-test.html) you can simply run the unit tests you created for your project during every or branch specific builds on Bitrise just by adding the ***Xcode: Unit Test*** step to your workflow. 
 
-Running unit tests that were created using [Quick](https://github.com/Quick/Quick) is not much more complex. Also check out the [Quick Documentation](https://github.com/Quick/Quick/tree/master/Documentation) page for a setup guide on your local machine.
+Running unit tests that were created using [Subliminal](https://github.com/inkling/Subliminal) is not much more complex. Also check out the [Subliminal Wiki](https://github.com/inkling/Subliminal/wiki) page for a setup guide on your local machine and other useful information.
 
-[Quick](https://github.com/Quick/Quick) can be installed using CocoaPods and after installing it you can simply run the tests you created the same way as before.
+[Subliminal](https://github.com/inkling/Subliminal) can be installed using CocoaPods and after installing it you can simply run the tests you created the same way as before.
 
->Remember to add Quick - and Nimble (for the expect(...).to assertion syntax)
+>Remember to add Subliminal - and the other pods you would like to use
 
-    target 'MyTests' do
-        use_frameworks!
-        pod 'Quick'
-        pod 'Nimble'
+    target :'Integration Tests' do
+        pod 'Subliminal'
     end
 
-This means you simply have to add the ***Run CocoaPods install*** step [https://github.com/bitrise-io/steps-cocoapods-and-repository-validator](https://github.com/bitrise-io/steps-cocoapods-and-repository-validator) and after that step you can run the ***Xcode: Unit Test*** to run your [Quick](https://github.com/Quick/Quick) based tests.
+This means you simply have to add the ***Run CocoaPods install*** step [https://github.com/bitrise-io/steps-cocoapods-and-repository-validator](https://github.com/bitrise-io/steps-cocoapods-and-repository-validator) and after that step you can run the ***Xcode: Unit Test*** to run your [Subliminal](https://github.com/inkling/Subliminal) based tests.
 
 Just like at the ***Xcode: Unit Test*** step if there were no errors during the test the Formatted Output will show the following message:
     

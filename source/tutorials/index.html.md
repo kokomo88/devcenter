@@ -23,6 +23,8 @@ it [here](/docs/index.html).
 * [Kiwi BDD unit tests with Bitrise](/tutorials/xcode-unit-test-kiwi.html)
 * [KIF functional testing with Bitrise](/tutorials/xcode-unit-test-kif.html)
 * [Quick BDD tests with Bitrise](/tutorials/xcode-unit-test-quick.html)
+* [Specta light-weight TDD/BDD tests with Bitrise](/tutorials/xcode-unit-test-specta.html)
+* [Subliminal iOS integration tests with Bitrise](/tutorials/xcode-unit-test-subliminal.html)
 
 ## Automations
 
