@@ -22,6 +22,7 @@ it [here](/docs/index.html).
 * [Xcode unit tests with Bitrise](/tutorials/xcode-unit-test.html)
 * [Kiwi BDD unit tests with Bitrise](/tutorials/xcode-unit-test-kiwi.html)
 * [KIF functional testing with Bitrise](/tutorials/xcode-unit-test-kif.html)
+* [Quick BDD tests with Bitrise](/tutorials/xcode-unit-test-quick.html)
 
 ## Automations
 
