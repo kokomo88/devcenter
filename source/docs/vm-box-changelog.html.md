@@ -5,6 +5,19 @@ title: Virtual Machines / Box change log
 # Virtual Machines / Box change log
 
 
+## April 4, 2015
+
+* git: 2.3.3 -> 2.3.5
+* NodeJS: v0.12.0 -> v0.12.2
+* NPM: 2.5.1 -> 2.7.4
+* [ansible](http://www.ansible.com/home){:target="_blank"}: 1.8.4 -> 1.9.0.1
+* Xcode:
+  * -beta: 6.3 beta 3 (6D543q) -> beta 4 (6D554n)
+* [RVM](http://rvm.io/){:target="_blank"}: 1.26.10 -> 1.26.11
+  * Ruby 2.1.5p273 installed with RVM, 2.1.5 is set as default
+  * [CocoaPods](http://cocoapods.org/){:target="_blank"}: 0.36.0 -> 0.36.3 *// pre-installed for the default Ruby version*
+
+
 ## March 21, 2015
 
 * Xcode 6.3 beta 2 (Build version 6D532l) -> Xcode 6.3 beta 3 (Build version 6D543q)
