@@ -5,6 +5,15 @@ title: Virtual Machines / Box change log
 # Virtual Machines / Box change log
 
 
+## April 18, 2015 *(planned)*
+
+* Will include the final version of Xcode 6.3
+* Xcode 6.2 will be removed
+* OS X: 10.10.2 -> 10.10.3
+
+Final list will be announced at April 14.
+
+
 ## April 4, 2015
 
 * git: 2.3.3 -> 2.3.5
