@@ -29,21 +29,21 @@ The current Box OS X version is: **10.10.2 (Yosemite)**
 Our current Base Box contains the following programs preinstalled:
 
 * [Homebrew](http://brew.sh/){:target="_blank"}: 0.9.5
-* git: 2.3.3
+* git: 2.3.5
 * mercurial: 3.3.2
 * xctool: 0.2.3
 * go: 1.4.2
-* NodeJS: v0.12.0
-* NPM: 2.5.1
+* NodeJS: v0.12.2
+* NPM: 2.7.4
 * wget: 1.16.3
-* [ansible](http://www.ansible.com/home){:target="_blank"}: 1.8.4
-* [nomad-cli](http://nomad-cli.com/){:target="_blank"}: 2.4.6
+* [ansible](http://www.ansible.com/home){:target="_blank"}: 1.9.0.1
 * Xcode:
   * -stable: 6.2 (Build version 6C131e)
-  * -beta: 6.3 beta 3 (Build version 6D543q)
-* [RVM](http://rvm.io/){:target="_blank"}: 1.26.10
+  * -beta: 6.3 beta 4 (Build version 6D554n)
+* [RVM](http://rvm.io/){:target="_blank"}: 1.26.11
   * Ruby 2.1.5p273 installed with RVM, 2.1.5 is set as default
-  * [CocoaPods](http://cocoapods.org/){:target="_blank"}: 0.36.0 - pre-installed for the default Ruby version
+  * [CocoaPods](http://cocoapods.org/){:target="_blank"}: 0.36.3 - pre-installed for the default Ruby version
+  * [nomad-cli](http://nomad-cli.com/){:target="_blank"}: 2.4.6 - pre-installed for the default Ruby version
 * [XcodeUnitTestMiniserver](https://github.com/bitrise-io/xcodebuild-unittest-miniserver){:target="_blank"}: 1.2.0
 
 You can find the **Virtual Machine changelog** [here](/docs/vm-box-changelog.html).
@@ -139,28 +139,11 @@ These patches do not change any pre-installed tool's version,
 unless it's really necessary.
 
 
-## Last update
+## Previous and upcoming updates
 
-The base box on the Bitrise worker servers were last
-updated at **March 21, 2015**.
+Please see our [Virtual Machine changelog](/docs/vm-box-changelog.html)
+for more information on past and planned updates.
 
-
-## Next planned update
-
-We'll update our Virtual Machines on **Saturday, April 4, 2015**.
-
-
-### Version changes
-
-* git: 2.3.3 -> 2.3.5
-* NodeJS: v0.12.0 -> v0.12.2
-* NPM: 2.5.1 -> 2.7.4
-* [ansible](http://www.ansible.com/home){:target="_blank"}: 1.8.4 -> 1.9.0.1
-* Xcode:
-  * -beta: 6.3 beta 3 (6D543q) -> beta 4 (6D554n)
-* [RVM](http://rvm.io/){:target="_blank"}: 1.26.10 -> 1.26.11
-  * Ruby 2.1.5p273 installed with RVM, 2.1.5 is set as default
-  * [CocoaPods](http://cocoapods.org/){:target="_blank"}: 0.36.0 -> 0.36.3 *// pre-installed for the default Ruby version*
 
 
 > If you need older versions of a program or you know about a useful tool
