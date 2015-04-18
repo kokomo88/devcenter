@@ -5,7 +5,7 @@ title: Virtual Machines / Box change log
 # Virtual Machines / Box change log
 
 
-## April 18, 2015 *(planned)*
+## April 18, 2015
 
 * Will include the **final version of Xcode 6.3** (6D570)
 * Xcode 6.2 and Xcode 6.3 beta 4 **will be removed**.

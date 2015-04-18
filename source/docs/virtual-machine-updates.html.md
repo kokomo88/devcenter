@@ -97,7 +97,7 @@ a stability flag.
 * The latest stable Xcode version is available at: `/Applications/Xcodes/Xcode-stable.app`
 * The latest beta Xcode version is available at: `/Applications/Xcodes/Xcode-beta.app`
 
-*The default Xcode version is always the latest major version
+*The default Xcode version is always the latest stable version
 installed in the Virtual Machine, you can specify a different version
 for Xcode builder steps, for example to use the latest beta
 you should specify `-beta` at the Step's related input*
