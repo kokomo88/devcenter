@@ -2,7 +2,7 @@
 title: Virtual Machines / Box change log
 ---
 
-# Virtual Machines / Box change log
+# Virtual Machines / Box #changelog
 
 
 ## April 18, 2015
