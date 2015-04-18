@@ -24,22 +24,22 @@ pre-installed [let us know](http://www.bitrise.io/contact){:target="_blank"}!
 
 ## Pre-installed component versions
 
-The current Box OS X version is: **10.10.2 (Yosemite)**
+The current Box OS X version is: **10.10.3 (Yosemite)**
 
 Our current Base Box contains the following programs preinstalled:
 
 * [Homebrew](http://brew.sh/){:target="_blank"}: 0.9.5
 * git: 2.3.5
-* mercurial: 3.3.2
+* mercurial: 3.3.3
 * xctool: 0.2.3
 * go: 1.4.2
 * NodeJS: v0.12.2
-* NPM: 2.7.4
+* NPM: 2.7.5
 * wget: 1.16.3
 * [ansible](http://www.ansible.com/home){:target="_blank"}: 1.9.0.1
 * Xcode:
-  * -stable: 6.2 (Build version 6C131e)
-  * -beta: 6.3 beta 4 (Build version 6D554n)
+  * -stable: 6.3 (Build version 6D570)
+  * -beta: no beta Xcode installed
 * [RVM](http://rvm.io/){:target="_blank"}: 1.26.11
   * Ruby 2.1.5p273 installed with RVM, 2.1.5 is set as default
   * [CocoaPods](http://cocoapods.org/){:target="_blank"}: 0.36.3 - pre-installed for the default Ruby version
