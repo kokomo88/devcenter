@@ -5,6 +5,13 @@ title: Virtual Machines / Box change log
 # Virtual Machines / Box #changelog
 
 
+## May 2, 2015 (planned)
+
+* Xcode 6.3.1
+
+*The complete list will be announced on April 27*
+
+
 ## April 18, 2015
 
 * Will include the **final version of Xcode 6.3** (6D570)

@@ -93,6 +93,18 @@ You can delete the local Xcode cache using your Terminal:
     rm -rf ~/Library/Developer/Xcode/DerivedData
 
 
+## Step hangs (times out after a period without any logs) on Bitrise
+
+Check whether the scripts you use trigger any GUI prompts or popups,
+or wait for any user input.
+If a script waits for any user input it can cause the build to hang.
+
+Most frequent sources of this issue:
+
+* Your script tries to access an item in the OS X Keychain and the item is configured to ask for permission before access (this is the default type of Access Control configuration if you add an item - for example a password - to Keychain)
+* You try to use a script or tool which requires permissions where OS X presents a popup for acceptance (for example an `osascript`). You can use a workaround to allow the tool, without manual interaction by the user, for example by using [https://github.com/jacobsalmela/tccutil](https://github.com/jacobsalmela/tccutil){:target="_blank"}.
+
+
 ## ld: library not found for -lPods-...
 
 **Error:**
