@@ -7,9 +7,16 @@ title: Virtual Machines / Box change log
 
 ## May 2, 2015 (planned)
 
-* Xcode 6.3.1
-
-*The complete list will be announced on April 27*
+* git: 2.3.5 -> 2.3.6
+* Xcode:
+  * -stable: 6.3 -> 6.3.1 (6D1002)
+  * -beta: no beta Xcode installed
+* Rubies installed with RVM
+  * 2.1.6
+  * 2.2.2
+  * 2.1.5 (p273), set as default
+  * [CocoaPods](http://cocoapods.org/){:target="_blank"}: 0.36.3 - pre-installed for the default Ruby version -> 0.36.4
+  * bundler installed for the default Ruby version
 
 
 ## April 18, 2015
