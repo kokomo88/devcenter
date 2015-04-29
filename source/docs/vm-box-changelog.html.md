@@ -17,6 +17,7 @@ title: Virtual Machines / Box change log
   * 2.1.5 (p273), set as default
   * [CocoaPods](http://cocoapods.org/){:target="_blank"}: 0.36.3 - pre-installed for the default Ruby version -> 0.36.4
   * bundler installed for the default Ruby version
+* [cmd-bridge](https://github.com/bitrise-io/cmd-bridge){:target="_blank"}: **new**, v0.9.2 installed and auto-started in server mode (with LaunchAgent)
 
 
 ## April 18, 2015
