@@ -29,7 +29,7 @@ The current Box OS X version is: **10.10.3 (Yosemite)**
 Our current Base Box contains the following programs preinstalled:
 
 * [Homebrew](http://brew.sh/){:target="_blank"}: 0.9.5
-* git: 2.3.5
+* git: 2.3.6
 * mercurial: 3.3.3
 * xctool: 0.2.3
 * go: 1.4.2
@@ -38,13 +38,18 @@ Our current Base Box contains the following programs preinstalled:
 * wget: 1.16.3
 * [ansible](http://www.ansible.com/home){:target="_blank"}: 1.9.0.1
 * Xcode:
-  * -stable: 6.3 (Build version 6D570)
+  * -stable: 6.3.1 (6D1002)
   * -beta: no beta Xcode installed
 * [RVM](http://rvm.io/){:target="_blank"}: 1.26.11
-  * Ruby 2.1.5p273 installed with RVM, 2.1.5 is set as default
-  * [CocoaPods](http://cocoapods.org/){:target="_blank"}: 0.36.3 - pre-installed for the default Ruby version
-  * [nomad-cli](http://nomad-cli.com/){:target="_blank"}: 2.4.6 - pre-installed for the default Ruby version
+* Rubies (installed with RVM) and Gems
+  * 2.1.6
+  * 2.2.2
+  * 2.1.5 (p273), set as **default**
+  * [CocoaPods](http://cocoapods.org/){:target="_blank"}: 0.36.4 - installed for the default Ruby version
+  * [nomad-cli](http://nomad-cli.com/){:target="_blank"}: 2.4.6 - installed for the default Ruby version
+  * bundler installed for the default Ruby version
 * [XcodeUnitTestMiniserver](https://github.com/bitrise-io/xcodebuild-unittest-miniserver){:target="_blank"}: 1.2.0
+* [cmd-bridge](https://github.com/bitrise-io/cmd-bridge){:target="_blank"}: v0.9.2 installed and auto-started in server mode (with LaunchAgent)
 
 You can find the **Virtual Machine changelog** [here](/docs/vm-box-changelog.html).
 
