@@ -45,7 +45,7 @@ Our current Base Box contains the following programs preinstalled:
   * 2.1.6
   * 2.2.2
   * 2.1.5 (p273), set as **default**
-  * [CocoaPods](http://cocoapods.org/){:target="_blank"}: 0.36.4 - installed for the default Ruby version
+  * [CocoaPods](http://cocoapods.org/){:target="_blank"}: 0.37.0 - installed for the default Ruby version
   * [nomad-cli](http://nomad-cli.com/){:target="_blank"}: 2.4.6 - installed for the default Ruby version
   * bundler installed for the default Ruby version
 * [XcodeUnitTestMiniserver](https://github.com/bitrise-io/xcodebuild-unittest-miniserver){:target="_blank"}: 1.2.0

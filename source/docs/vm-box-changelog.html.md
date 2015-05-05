@@ -5,7 +5,12 @@ title: Virtual Machines / Box change log
 # Virtual Machines / Box #changelog
 
 
-## May 2, 2015 (planned)
+## May 4
+
+* [CocoaPods](http://cocoapods.org/){:target="_blank"}: 0.36.4 - installed for the default Ruby version -> 0.37.0
+
+
+## May 2, 2015
 
 * git: 2.3.5 -> 2.3.6
 * Xcode:
