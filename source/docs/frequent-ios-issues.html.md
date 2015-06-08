@@ -48,6 +48,52 @@ You can delete the local Xcode cache using your Terminal:
     rm -rf ~/Library/Developer/Xcode/DerivedData
 
 
+## Searching for errors and issues in Xcode generated outputs
+
+You should search for `error:` in the Xcode logs, in 99% of the
+cases that'll be the one which causes your issues.
+
+If that doesn't work you should also search for `warning:`,
+in rare cases Xcode doesn't print an `error:` even if it fails.
+
+If you have the logs on your own machine then you can run
+something like this in your Terminal:
+
+    grep --color 'error:' my.log
+    grep --color 'warning:' my.log
+
+
+## Xcode step (build, analyze, unit test or archive) fails on Bitrise.io
+
+Bitrise uses the **Xcode Command Line Tools** to run Xcode actions (build,
+analyze, unit test or archive) which in some rare cases works a bit different
+compared to if you run the same command from the Xcode app/GUI.
+
+To find the error message in an Xcode generated log you should
+search for `error:` and `warning:` in the logs, as described
+in the previous section (**Searching for errors and issues in Xcode generated outputs**).
+
+If that doesn't help you can run the same xcode command on your own
+machine, from **Terminal**. The exact `xcodebuild` command what's performed
+by Bitrise can be found around the top of the logs.
+
+To find it just search for `$ xcodebuild` in the logs, you'll find something like
+this (the exact command and parameters depend on the action):
+
+    $ xcodebuild -project X.xcodeproj -scheme X clean archive -archivePath /Users/vagrant/deploy/X.xcarchive PROVISIONING_PROFILE=1...-...-...-...-...b CODE_SIGN_IDENTITY=iPhone Developer: X (F...7) OTHER_CODE_SIGN_FLAGS=--keychain bitrise.keychain
+
+**You can copy this command and run it in Terminal on your own machine.
+The only things you should change (or remove) is the `OTHER_CODE_SIGN_FLAGS=--keychain bitrise.keychain`
+parameter**.
+
+*This is used by Bitrise to not to store Certificates in the System or
+Login keychain, but in a special bitrise.keychain instead (which is usually
+removed at the end of the step).*
+
+Running the same command in your Terminal should help find what the
+source of the issue is.
+
+
 ## Step hangs (times out after a period without any logs) on Bitrise
 
 Check whether the scripts you use trigger any GUI prompts or popups,
@@ -75,21 +121,6 @@ Most likely you use Cocoapods but you specified the Xcode project (.xcodeproj) f
 
 If still fails check your App's Workflow Environments - the project file path
 might be overwritten by a Workflow environment variable.
-
-
-## Searching for errors and issues in Xcode generated outputs
-
-You should search for `error:` in the Xcode logs, in 99% of the
-cases that'll be the one which causes your issues.
-
-If that doesn't work you should also search for `warning:`,
-in rare cases Xcode doesn't print an `error:` even if it fails.
-
-If you have the logs on your own machine then you can run
-something like this in your Terminal:
-
-    grep --color 'error:' my.log
-    grep --color 'warning:' my.log
 
 
 ## No dSYM found
