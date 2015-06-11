@@ -4,6 +4,23 @@ title: Virtual Machines / Box change log
 
 # Virtual Machines / Box #changelog
 
+## June 13, 2015
+
+* coreutils: **new**, `8.23`, installed with [Homebrew](http://brew.sh/){:target="_blank"}
+* git: `2.3.6` -> `2.4.3`
+* mercurial: `3.3.3` -> `3.4.1`
+* NodeJS: `v0.12.2` -> `v0.12.4`
+* NPM: `2.7.5` -> `2.10.1`
+* [ansible](http://www.ansible.com/home){:target="_blank"}: `1.9.0.1` -> `1.9.1`
+* Xcode:
+  * -stable: `6.3.1 (6D1002)` -> `6.3.2 (6D2105)`
+  * -beta: no beta Xcode installed
+* Ruby Gems, *installed for the default Ruby version*
+  * [CocoaPods](http://cocoapods.org/){:target="_blank"}: `0.37.0` -> `0.37.2`
+  * [nomad-cli](http://nomad-cli.com/){:target="_blank"}: `2.4.6` -> `2.4.8`
+  * [bundler](http://bundler.io/){:target="_blank"}: `1.10.3`
+
+
 ## May 4, 2015
 
 * [CocoaPods](http://cocoapods.org/){:target="_blank"}: 0.36.4 - installed for the default Ruby version -> 0.37.0
