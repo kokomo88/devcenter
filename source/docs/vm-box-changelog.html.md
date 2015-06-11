@@ -6,7 +6,7 @@ title: Virtual Machines / Box change log
 
 ## June 13, 2015
 
-* coreutils: **new**, `8.23`, installed with [Homebrew](http://brew.sh/){:target="_blank"}
+* coreutils: **new**, `8.23`, installed with [Homebrew](http://brew.sh/){:target="_blank"}, this means that all the tools are prefixed with the letter `g`. For example `timeout` is available as `gtimeout`.
 * git: `2.3.6` -> `2.4.3`
 * mercurial: `3.3.3` -> `3.4.1`
 * NodeJS: `v0.12.2` -> `v0.12.4`
