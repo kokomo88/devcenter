@@ -29,26 +29,28 @@ The current Box OS X version is: **10.10.3 (Yosemite)**
 Our current Base Box contains the following programs preinstalled:
 
 * [Homebrew](http://brew.sh/){:target="_blank"}: `0.9.5`
-* git: `2.3.6`
-* mercurial: `3.3.3`
-* xctool: `0.2.3`
-* go: `1.4.2` - *installed with Homebrew*
-* NodeJS: `v0.12.2`
-* NPM: `2.7.5`
-* wget: `1.16.3`
-* [ansible](http://www.ansible.com/home){:target="_blank"}: `1.9.0.1`
-* Xcode:
-  * -stable: `6.3.1 (6D1002)`
-  * -beta: no beta Xcode installed
+* installed with Homebrew:
+    * __coreutils__: `8.23` - installed with Homebrew, this means that all the tools are prefixed with the letter __g__. For example `timeout` is available as `gtimeout`.
+    * __git__: `2.4.3`
+    * __mercurial__: `3.4.1`
+    * __xctool__: `0.2.3`
+    * __go__: `1.4.2` - *installed with Homebrew*
+    * __NodeJS__: `v0.12.4`
+    * __NPM__: `2.10.1`
+    * __wget__: `1.16.3`
+    * [ansible](http://www.ansible.com/home){:target="_blank"}: `1.9.1`
+* __Xcode__:
+  * __-stable__: `6.3.2 (6D2105)`
+  * __-beta__: no beta Xcode installed
 * [RVM](http://rvm.io/){:target="_blank"}: `1.26.11`
-* Rubies (installed with RVM)
+* __Rubies__ (installed with RVM)
   * `2.1.6`
   * `2.2.2`
   * `2.1.5 (p273)`, set as **default**
-* Ruby Gems, *installed for the default Ruby version*
-  * [CocoaPods](http://cocoapods.org/){:target="_blank"}: `0.37.0`
-  * [nomad-cli](http://nomad-cli.com/){:target="_blank"}: `2.4.6`
-  * [bundler](http://bundler.io/){:target="_blank"}
+* __Ruby Gems__, *installed for the default Ruby version*
+  * [CocoaPods](http://cocoapods.org/){:target="_blank"}: `0.37.2`
+  * [nomad-cli](http://nomad-cli.com/){:target="_blank"}: `2.4.8`
+  * [bundler](http://bundler.io/){:target="_blank"}: `1.10.3`
 * [XcodeUnitTestMiniserver](https://github.com/bitrise-io/xcodebuild-unittest-miniserver){:target="_blank"}: `1.2.0`
 * [cmd-bridge](https://github.com/bitrise-io/cmd-bridge){:target="_blank"}: `v0.9.2` installed and auto-started in server mode (with LaunchAgent)
 
@@ -118,9 +120,10 @@ workflow with [this content](https://github.com/bitrise-io/bitrise-script-collec
 activate each by calling xcode-select and print the version of Xcode
 and all the SDKs (and Simulators) available for the version.*
 
-## Update Frequency
 
-We update our OS X Virtual Machines weekly in the following manner:
+## Virtual Machine update scheduled
+
+We update our OS X Virtual Machines at about every seconds week in the following manner:
 
 * At the beginning of the week (mostly on Monday) we prepare the new Virtual Machines which will contain the latest stable Xcode version and the latest beta version too. We announce the pre-installed tool version changes on our [blog](http://blog.bitrise.io/){:target="_blank"} and also update this page once we know the final list.
 * During the week we test the new Virtual Machine internally to ensure it's stable enough for the release.
