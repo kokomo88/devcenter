@@ -22,12 +22,15 @@ Website: http://devcenter.bitrise.io/
 * clone this repository
 * `bundle install`
 * `bundle exec middleman`
+* Open [http://localhost:4567/](http://localhost:4567/) in your browser
 
 
 ## With docker-compose
 
 * `sudo su`
 * `docker-compose up`
+* Open [http://localhost:4567/](http://localhost:4567/) in your browser
+    * If you run Docker in a virtual machine you might have to set a port-forward for the virtual machine!
 
 
 ### Useful / cheat-sheat

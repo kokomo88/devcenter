@@ -11,6 +11,4 @@ COPY Gemfile.lock Gemfile.lock
 RUN bundle install
 
 WORKDIR /app
-COPY . /app
-
 CMD bundle exec middleman
