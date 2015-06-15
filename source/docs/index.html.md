@@ -31,6 +31,7 @@ it [here](/tutorials/index.html).
 
 * [Step Development](/docs/step-dev.html)
 * [Virtual Machines: pre-installed tools and update schedule](/docs/virtual-machine-updates.html)
+* [Useful tools](/docs/useful_tools.html)
 
 ### API
 
