@@ -15,6 +15,7 @@ it [here](/docs/index.html).
 
 ## Development workflows & best practices
 
+* [Manage your Bitrise Workflows](/tutorials/manage-your-bitrise-workflow.html)
 * [Efficient Continuous Integration and Deployment Workflow for iOS development](/tutorials/efficient-continuous-integration-and-deployment-workflow-for-ios.html)
 
 ## Running tests
@@ -28,4 +29,3 @@ it [here](/docs/index.html).
 * [HipChat message with build status](/tutorials/hipchat-message.html)
 * [Replace or download project resources](/tutorials/replace-project-resources.html)
 * [Auto Deploy your Middleman website with Bitrise](/tutorials/middleman-project.html)
-
