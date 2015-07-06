@@ -4,6 +4,22 @@ title: Virtual Machines / Box change log
 
 # Virtual Machines / Box #changelog
 
+## July 11, 2015
+
+* installed with Homebrew:
+    * __git__: `2.4.3` -> `2.4.5`
+    * __mercurial__: `3.4.1` -> `3.4.2`
+    * __xctool__: `0.2.3` -> `0.2.4`
+    * __NodeJS__: `v0.12.4` -> `v0.12.5`
+    * __NPM__: `2.10.1` -> `2.11.2`
+    * [ansible](http://www.ansible.com/home){:target="_blank"}: `1.9.1` -> `1.9.2`
+* __Xcode__:
+  * __-stable__: `6.3.2 (build version: 6D2105)` -> `6.4 (build version: 6E35b)`
+  * __-beta__: `7.0 beta2 (build version: 7A121l)`
+* __Ruby Gems__, *installed for the default Ruby version*
+  * [bundler](http://bundler.io/){:target="_blank"}: `1.10.3` -> `1.10.5`
+
+
 ## June 13, 2015
 
 * coreutils: **new**, `8.23`, installed with [Homebrew](http://brew.sh/){:target="_blank"}, this means that all the tools are prefixed with the letter `g`. For example `timeout` is available as `gtimeout`.

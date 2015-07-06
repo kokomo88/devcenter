@@ -34,13 +34,13 @@ Our current Base Box contains the following programs preinstalled:
     * __git__: `2.4.3`
     * __mercurial__: `3.4.1`
     * __xctool__: `0.2.3`
-    * __go__: `1.4.2` - *installed with Homebrew*
+    * __go__: `1.4.2`
     * __NodeJS__: `v0.12.4`
     * __NPM__: `2.10.1`
     * __wget__: `1.16.3`
     * [ansible](http://www.ansible.com/home){:target="_blank"}: `1.9.1`
 * __Xcode__:
-  * __-stable__: `6.3.2 (6D2105)`
+  * __-stable__: `6.3.2 (build version: 6D2105)`
   * __-beta__: no beta Xcode installed
 * [RVM](http://rvm.io/){:target="_blank"}: `1.26.11`
 * __Rubies__ (installed with RVM)
