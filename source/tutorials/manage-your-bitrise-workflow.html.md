@@ -7,7 +7,7 @@ title: Manage your Bitrise workflow
 To start editing your workflow you first have to open it in the
 **Workflow Editor** on Bitrise.io:
 
-1. Open your App's page on [Bitrise.io](https://bitrise.io/)
+1. Open your App's page on [Bitrise.io](https://www.bitrise.io/)
 2. Select the **Workflow tab**
 3. Click on the **Manage Workflows** button
 
