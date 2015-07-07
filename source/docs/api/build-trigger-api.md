@@ -56,7 +56,7 @@ You can find a **curl configurator** on **your App's Code tab**.
 
 A base curl call would look like this (with a 1.0.0 *tag* build parameter):
 
-    $ curl http://www.bitrise.io/hook/[app-slug] --data-urlencode 'payload={"hook_info":{"type":"bitrise","api_token":"[app-api-token]"},"build_params":{"tag":"1.0.0"}}'
+    $ curl https://www.bitrise.io/hook/[app-slug] --data-urlencode 'payload={"hook_info":{"type":"bitrise","api_token":"[app-api-token]"},"build_params":{"tag":"1.0.0"}}'
 
 
 
@@ -77,7 +77,7 @@ We extended the list of accepted `build_params` with a new item, an `environment
 
 Let's say you want to build the "test" branch, specify a build message and set a test Environment Variable, then the call will look like this:
 
-    curl http://www.bitrise.io/hook/xxx --data-urlencode 'payload={"hook_info":{"type":"bitrise","api_token":"xxx"},"build_params":{"branch":"test","commit_message":"Environment in API params test","environments":[{"mapped_to":"API_TEST_ENV","value":"This is the test value"}]}}'
+    curl https://www.bitrise.io/hook/xxx --data-urlencode 'payload={"hook_info":{"type":"bitrise","api_token":"xxx"},"build_params":{"branch":"test","commit_message":"Environment in API params test","environments":[{"mapped_to":"API_TEST_ENV","value":"This is the test value"}]}}'
 
 *Note: this cURL command can be configured and generated
 on your App's **Code tab**.*

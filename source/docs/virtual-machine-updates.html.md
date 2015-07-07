@@ -19,7 +19,7 @@ and for other automation.
 **This is a guideline, not a rule documentation.**
 If you need older versions of a program or you know about a useful tool
 which would be beneficial for everyone to be
-pre-installed [let us know](http://www.bitrise.io/contact){:target="_blank"}!
+pre-installed [let us know](https://www.bitrise.io/contact){:target="_blank"}!
 
 
 ## Pre-installed component versions
@@ -134,7 +134,7 @@ and is usually performed during the weekend to not to interfere
 with your everyday business.
 
 Updates are always announced on our [blog](http://blog.bitrise.io/){:target="_blank"}
-and can be seen on [your Bitrise Dashboard](http://www.bitrise.io/dashboard){:target="_blank"} and we also send you
+and can be seen on [your Bitrise Dashboard](https://www.bitrise.io/dashboard){:target="_blank"} and we also send you
 a *Platform Update email* about significant changes unless you disable it on
 your [Account Settings](https://www.bitrise.io/me/profile){:target="_blank"} page.
 
@@ -157,4 +157,4 @@ for more information on past and planned updates.
 
 > If you need older versions of a program or you know about a useful tool
 > which would be beneficial for everyone to be
-> pre-installed [let us know](http://www.bitrise.io/contact){:target="_blank"}!
+> pre-installed [let us know](https://www.bitrise.io/contact){:target="_blank"}!

@@ -34,7 +34,7 @@ You can learn all about it in this tutorial, just follow these steps in order:
 
 ## 1. Add a new app with manually specified repository on Bitrise
 
-To add a new app on Bitrise, select **Add new app** on the Bitrise Dashboard, or [click here](http://www.bitrise.io/apps/add){:target="_blank"}.
+To add a new app on Bitrise, select **Add new app** on the Bitrise Dashboard, or [click here](https://www.bitrise.io/apps/add){:target="_blank"}.
 
 In the first step, you need to select the source code provider of your app. For the purposes of this tutorial, select **Click here to set up your repository manually**, then copy and paste your GIT repository URL. For public repositories, use HTTPS URL, for private repositories use SSH URL. Next, select how Bitrise will be able to access the source code, and follow the instructions.
 
