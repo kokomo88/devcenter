@@ -6,6 +6,7 @@ title: Virtual Machines / Box change log
 
 ## July 11, 2015
 
+* OS X: `10.10.3` -> `10.10.4`
 * installed with Homebrew:
     * __git__: `2.4.3` -> `2.4.5`
     * __mercurial__: `3.4.1` -> `3.4.2`
