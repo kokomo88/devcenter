@@ -2,6 +2,8 @@
 title: Bitrise Tutorials
 ---
 
+# Tutorials
+
 Community created tutorials and examples of how Bitrise can be
 used in real life projects.
 
@@ -11,7 +13,6 @@ to speed up your development process.
 If you're looking for the Bitrise Documentation you can find
 it [here](/docs/index.html).
 
-# Tutorials
 
 ## Development workflows & best practices
 

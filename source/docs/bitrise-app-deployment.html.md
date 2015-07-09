@@ -13,7 +13,7 @@ or you can just use it for archiving your App and other
 build artifact files.
 
 
-# How does it work?
+## How does it work?
 
 If you want to distribute your iOS App through Bitrise
 all you need is an `Xcode Archive` and a `Bitrise iOS App Deployment`
@@ -43,7 +43,8 @@ presented with a list of allowed device identifiers (UDID).
 
 If you or a team member of your App's team
 register a device for her Bitrise account
-(you can do this on your [Account Settings page](https://www.bitrise.io/me/profile){:target="_blank"} at the *Test Devices* section) and the device's identifier can be found
+(you can do this on your [Account Settings page](https://www.bitrise.io/me/profile){:target="_blank"}
+at the *Test Devices* section) and the device's identifier can be found
 in the Provisioning Profile then instead of just
 presenting the identifier in the list you'll see
 the user who registered the device and the device's
@@ -55,7 +56,7 @@ button instead of the *Download* button. With this
 **you can install the App on your device directly from Bitrise**.
 
 
-# Public App install page
+## Public App install page
 
 If you enable the *Public install page* option for the App
 then a long and random URL will be available for you
@@ -86,7 +87,7 @@ then only your App's team members will be able to install the App
 from Bitrise!***
 
 
-# Notifications and install invites
+## Notifications and install invites
 
 On the Build's page you can send install invites
 for your testers. You can either send invites for
