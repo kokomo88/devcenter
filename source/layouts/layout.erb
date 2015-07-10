@@ -1,61 +1,82 @@
 <!doctype html>
 <html>
-  <head>
-    <meta charset="utf-8">
-    
-    <!-- Always force latest IE rendering engine or request Chrome Frame -->
-    <meta content="IE=edge,chrome=1" http-equiv="X-UA-Compatible">
-    
-    <!-- Use title if it's in the page YAML frontmatter -->
-    <title><%= current_page.data.title || "The Middleman" %></title>
-    
-    <%= stylesheet_link_tag "normalize", "all" %>
-    <%= javascript_include_tag  "all" %>
-  </head>
-  
-  <body class="<%= page_classes %>">
-    <a href="https://github.com/bitrise-io/devcenter"><img style="position: absolute; top: 0; right: 0; border: 0;" src="https://camo.githubusercontent.com/52760788cde945287fbb584134c4cbc2bc36f904/68747470733a2f2f73332e616d617a6f6e6177732e636f6d2f6769746875622f726962626f6e732f666f726b6d655f72696768745f77686974655f6666666666662e706e67" alt="Fork me on GitHub" data-canonical-src="https://s3.amazonaws.com/github/ribbons/forkme_right_white_ffffff.png"></a>
-    <div class="navigation">
-      <div class="wrapper">
-        <h1><a href="/" class="white">Bitrise Dev Center</a></h1>
-        <div class="right">
-          <div class="btn"><a href="http://bitrise.io/" class="white">Register for free</a></div>
-        </div>
-      </div>
-    </div>
-    <div class="wrapper">
-      <div class="sidebar">
-        <h3>introduction</h3>
-        <ul>
-          <li>Getting started</li>
-        </ul>
-        <h3>introduction</h3>
-        <ul>
-          <li>Getting started</li>
-        </ul>
-      </div>
-      <div class="content">
-        <%= yield %>
-        <%= disqus %>
-      </div>
-      <div class="clear"></div>
-      <div class="footer">
-        <div class="footer-col">
-          <div class="title">Register an account</div>
-          <div class="separator"></div>
-          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam sed posuere eros. Donec auctor aliquet varius. In lacinia,u</p>
-        </div>
-        <div class="footer-col">
-          <div class="title">Join the community</div>
-          <div class="separator"></div>
-          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam sed posuere eros. Donec auctor aliquet varius. In lacinia, justo eu viverra luctus, orci libero ornare justo, sit amet condimentum metus libero vel justo. Morbi convallis blandit purus,</p>
-        </div>
-        <div class="clear"></div>
-        <div class="copyright">Copyright ©<%= Time.now.year %> Bitrise
-          <span class="footer-nav"><a href="http://bitrise.io">HOME</a></span>
-          <span class="footer-nav"><a href="http://blog.bitrise.io">BLOG</a></span>
-        </div>
-      </div>
-    </div>
-  </body>
+	<head>
+		<meta charset="utf-8" />
+
+		<!-- Always force latest IE rendering engine or request Chrome Frame -->
+		<meta content="IE=edge,chrome=1" http-equiv="X-UA-Compatible" />
+		<meta name=viewport content="width=device-width, initial-scale=1.0" />
+		<meta name=apple-mobile-web-app-capable content=yes>
+
+		<!-- Use title if it's in the page YAML frontmatter -->
+		<title><%= current_page.data.title ? "#{current_page.data.title} - Bitrise Devcenter" : "Bitrise Devcenter" %></title>
+		<meta name="description" content="Bitrise is a cloud based automatic app builder and distribution system">
+		<meta name="keywords" content="continuous integration, continuous delivery, ios continious integration, ios continious delivery, mobile continious integration, mobile continious delivery, jenkins alternative, cisimple alternative, buildozer alternative, greenhouse alternative" />
+		<meta name="author" content="bitrise">
+
+		<%= stylesheet_link_tag "normalize", "all" %>
+		<%= stylesheet_link_tag '//fonts.googleapis.com/css?family=Source+Code+Pro' %>
+		<%= stylesheet_link_tag '//cloud.typography.com/7981312/721124/css/fonts.css' %>
+		<%= stylesheet_link_tag '//fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,400,700,300,600' %>
+		<%= javascript_include_tag	"all" %>
+	</head>
+
+	<body class="<%= page_classes %>">
+		<a href="https://github.com/bitrise-io/devcenter"><img class="fork" src="/images/fork_me_git.png" alt="Fork me on GitHub" data-canonical-src="https://s3.amazonaws.com/github/ribbons/forkme_right_white_ffffff.png"></a>
+		<div class="navigation">
+			<div class="wrapper">
+							<a href="/"><img id="logo" src="/images/bitrise_devc_logo.png" alt=""></img></a>
+				<div class="right">
+					<a href="https://www.bitrise.io" class="white">Register <span>for free</span></a>
+				</div>
+			</div>
+		</div>
+		<div class="wrapper page-body">
+			<div class="topbar">
+				<ul>
+					<li><a href="/">Home</a></li>
+					<li><a href="/docs/index.html">Docs</a></li>
+					<li><a href="/tutorials/index.html">Tutorials</a></li>
+				</ul>
+			</div>
+			<div class="sidebar">
+				<h3>Highlights</h3>
+				<ul>
+					<li><a href="/">Bitrise DevCenter Home</a></li>
+					<li><a href="/docs/what-is-bitrise.html">What is Bitrise?</a></li>
+					<li><a href="/docs/code-security.html">Code Security</a></li>
+					<li><a href="/docs/step-update.html">Update a Step in your Workflow</a></li>
+					<li><a href="/docs/bitrise-app-deployment.html">Bitrise App Deployment</a></li>
+					<li><a href="/docs/virtual-machine-updates.html">Virtual Machines and Base Box updates</a></li>
+					<li><a href="/docs/frequent-ios-issues.html">Frequent iOS issues</a></li>
+					<li><a href="/docs/api/build-trigger-api.html">Build Trigger API</a></li>
+				</ul>
+				<h3>Main sections</h3>
+				<ul>
+					<li><a href="/docs/index.html">Documentation, FAQ</a></li>
+					<li><a href="/tutorials/index.html">Tutorials</a></li>
+				</ul>
+			</div>
+			<div class="content">
+				<%= yield %>
+				<%= disqus %>
+			</div>
+			<div class="clear">
+			</div>
+		</div>
+		<div class="footer">
+			<div class="left-menu">
+				<p>Copyright © <%= Time.now.year %> Bitfall Kft.</p>
+				<p class="slash">/</p>
+				<a href="https://www.bitrise.io">BITRISE</a>
+				<p class="slash">/</p>
+				<a href="http://blog.bitrise.io">BLOG</a>
+			</div>
+			<div class="right-menu">
+				<a href="https://github.com/bitrise-io" class="github"></a>
+				<a href="https://twitter.com/bitrise" class="twitter"></a>
+			</div>
+			<div class="clear"></div>
+		</div>
+	</body>
 </html>
