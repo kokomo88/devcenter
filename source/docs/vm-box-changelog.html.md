@@ -4,6 +4,10 @@ title: Virtual Machines / Box change log
 
 # Virtual Machines / Box #changelog
 
+## July 18, 2015
+
+TBA
+
 ## July 11, 2015
 
 * OS X: `10.10.3` -> `10.10.4`
@@ -15,10 +19,10 @@ title: Virtual Machines / Box change log
     * __NPM__: `2.10.1` -> `2.11.2`
     * [ansible](http://www.ansible.com/home){:target="_blank"}: `1.9.1` -> `1.9.2`
 * __Xcode__:
-  * __-stable__: `6.3.2 (build version: 6D2105)` -> `6.4 (build version: 6E35b)`
-  * __-beta__: `7.0 beta2 (build version: 7A121l)`
+    * __-stable__: `6.3.2 (build version: 6D2105)` -> `6.4 (build version: 6E35b)`
+    * __-beta__: `7.0 beta2 (build version: 7A121l)`
 * __Ruby Gems__, *installed for the default Ruby version*
-  * [bundler](http://bundler.io/){:target="_blank"}: `1.10.3` -> `1.10.5`
+    * [bundler](http://bundler.io/){:target="_blank"}: `1.10.3` -> `1.10.5`
 
 
 ## June 13, 2015
