@@ -1,4 +1,4 @@
-# TestFairy deployment with Bitrise
+# Deploy to TestFairy with Bitrise
 
 If you are looking for a deployment service that also gives you a lot of insights about your application than [TestFairy](https://www.testfairy.com/) is a great service to check out.
 
@@ -10,7 +10,7 @@ When testing apps in the crowd, you never know what exactly was tested and what 
 
 To deploy your app on the TestFairy platform you just simply need to add the TestFairy step to your application's workflow.
 
-![Workflow with TestFairy iOS App Deployment step](images/testfairy-deployment-with-bitrise/workflow-editor.png "Workflow with TestFairy iOS App Deployment step"){: .inline-image }
+![Workflow with TestFairy iOS App Deployment step](images/deploy-to-testfairy-with-bitrise/workflow-editor.png "Workflow with TestFairy iOS App Deployment step"){: .inline-image }
 
 The only required parameter you have to add is your API Key on TestFairy. To get it you should navigate to your [account preferences](https://app.testfairy.com/settings/) on TestFairy and find the key under your API Key menu.
 

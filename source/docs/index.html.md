@@ -25,7 +25,7 @@ it [here](/tutorials/index.html).
 
 * [Code Security](/docs/code-security.html)
 * [Bitrise App Deployment](/docs/bitrise-app-deployment.html)
-* [TestFairy Deployment with Bitrise](/docs/testfairy-deployment-with-bitrise.html)
+* [Deploy to TestFairy with Bitrise](/docs/deploy-to-testfairy-with-bitrise.html)
 * [Update a Step in your Workflow](/docs/step-update.html)
 * [Best Practices](/docs/best-practices.html)
 * [Setup a webhook for your app on Bitrise](/docs/setup-webhook.html)
