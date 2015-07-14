@@ -6,7 +6,13 @@ title: Virtual Machines / Box change log
 
 ## July 18, 2015
 
-TBA
+* installed with Homebrew:
+    * __coreutils__: `8.23` -> `8.24`
+    * __NodeJS__: `v0.12.5` -> `v0.12.7`
+    * __NPM__: `2.11.2` -> `2.12.1`
+* __Xcode__:
+    * __-stable__: `6.4 (build version: 6E35b)` (no change)
+    * __-beta__: `7.0 beta2 (build version: 7A121l)` -> `7.0 beta3 (build version: 7A152u)`
 
 ## July 11, 2015
 
