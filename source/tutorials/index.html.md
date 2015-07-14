@@ -32,6 +32,11 @@ it [here](/docs/index.html).
 * [Auto Deploy your Middleman website with Bitrise](/tutorials/middleman-project.html)
 
 
+## Deployment
+
+* [Deploy to TestFairy with Bitrise](/tutorials/deploy-to-testfairy-with-bitrise.html)
+
+
 ## Community created (links)
 
 *If you write a tutorial or blog post about Bitrise feel free to add your link here.
