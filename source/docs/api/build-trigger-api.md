@@ -2,7 +2,7 @@
 title: Build Trigger API
 ---
 
-# What is the Build Trigger API?
+# Bitrise Build Trigger API
 
 With the Build Trigger API you can start a new build of your app
 with a simple API call.
@@ -56,34 +56,34 @@ You can find a **curl configurator** on **your App's Code tab**.
 
 A base curl call would look like this (with a 1.0.0 *tag* build parameter):
 
-    $ curl http://www.bitrise.io/hook/[app-slug] --data-urlencode 'payload={"hook_info":{"type":"bitrise","api_token":"[app-api-token]"},"build_params":{"tag":"1.0.0"}}'
+    $ curl https://www.bitrise.io/hook/[app-slug] --data-urlencode 'payload={"hook_info":{"type":"bitrise","api_token":"[app-api-token]"},"build_params":{"tag":"1.0.0"}}'
 
 
 
-# Specify Environment Variables
+## Specify Environment Variables
 
 You can define additional *environment variables* for your
 build. These variables will be handled with the highest priority
 which means that you can overwrite any other environment variable
 specified in your Workflow.
 
-## Here's how you can use it:
+### Here's how you can use it:
 
 You can configure your build the same way as you did before - you can find a cURL call configurator on the Code tab of your app.
 
 We extended the list of accepted `build_params` with a new item, an `environments` array. It's important that this parameter have to be an array, and that every item of the array have to include at least a `mapped_to` (the key of the Environment Variable, without a dollar sign ($)) and a `value` property (the value of the variable).
 
-## Example
+### Example
 
 Let's say you want to build the "test" branch, specify a build message and set a test Environment Variable, then the call will look like this:
 
-    curl http://www.bitrise.io/hook/xxx --data-urlencode 'payload={"hook_info":{"type":"bitrise","api_token":"xxx"},"build_params":{"branch":"test","commit_message":"Environment in API params test","environments":[{"mapped_to":"API_TEST_ENV","value":"This is the test value"}]}}'
+    curl https://www.bitrise.io/hook/xxx --data-urlencode 'payload={"hook_info":{"type":"bitrise","api_token":"xxx"},"build_params":{"branch":"test","commit_message":"Environment in API params test","environments":[{"mapped_to":"API_TEST_ENV","value":"This is the test value"}]}}'
 
 *Note: this cURL command can be configured and generated
 on your App's **Code tab**.*
 
 
-# Specify the Workflow to be used for the build
+## Specify the Workflow to be used for the build
 
 By default the Workflow for your Build will be selected
 based on the *branch* parameter. This works well if you

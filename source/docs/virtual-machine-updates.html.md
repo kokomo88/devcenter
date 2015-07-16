@@ -19,32 +19,40 @@ and for other automation.
 **This is a guideline, not a rule documentation.**
 If you need older versions of a program or you know about a useful tool
 which would be beneficial for everyone to be
-pre-installed [let us know](http://www.bitrise.io/contact){:target="_blank"}!
+pre-installed [let us know](https://www.bitrise.io/contact){:target="_blank"}!
 
 
 ## Pre-installed component versions
 
-The current Box OS X version is: **10.10.2 (Yosemite)**
+The current Box OS X version is: **10.10.3 (Yosemite)**
 
 Our current Base Box contains the following programs preinstalled:
 
-* [Homebrew](http://brew.sh/){:target="_blank"}: 0.9.5
-* git: 2.3.3
-* mercurial: 3.3.2
-* xctool: 0.2.3
-* go: 1.4.2
-* NodeJS: v0.12.0
-* NPM: 2.5.1
-* wget: 1.16.3
-* [ansible](http://www.ansible.com/home){:target="_blank"}: 1.8.4
-* [nomad-cli](http://nomad-cli.com/){:target="_blank"}: 2.4.6
-* Xcode:
-  * -stable: 6.2 (Build version 6C131e)
-  * -beta: 6.3 beta 3 (Build version 6D543q)
-* [RVM](http://rvm.io/){:target="_blank"}: 1.26.10
-  * Ruby 2.1.5p273 installed with RVM, 2.1.5 is set as default
-  * [CocoaPods](http://cocoapods.org/){:target="_blank"}: 0.36.0 - pre-installed for the default Ruby version
-* [XcodeUnitTestMiniserver](https://github.com/bitrise-io/xcodebuild-unittest-miniserver){:target="_blank"}: 1.2.0
+* [Homebrew](http://brew.sh/){:target="_blank"}: `0.9.5`
+* installed with Homebrew:
+    * __coreutils__: `8.23` - installed with Homebrew, this means that all the tools are prefixed with the letter __g__. For example `timeout` is available as `gtimeout`.
+    * __git__: `2.4.3`
+    * __mercurial__: `3.4.1`
+    * __xctool__: `0.2.3`
+    * __go__: `1.4.2`
+    * __NodeJS__: `v0.12.4`
+    * __NPM__: `2.10.1`
+    * __wget__: `1.16.3`
+    * [ansible](http://www.ansible.com/home){:target="_blank"}: `1.9.1`
+* __Xcode__:
+  * __-stable__: `6.3.2 (build version: 6D2105)`
+  * __-beta__: no beta Xcode installed
+* [RVM](http://rvm.io/){:target="_blank"}: `1.26.11`
+* __Rubies__ (installed with RVM)
+  * `2.1.6`
+  * `2.2.2`
+  * `2.1.5 (p273)`, set as **default**
+* __Ruby Gems__, *installed for the default Ruby version*
+  * [CocoaPods](http://cocoapods.org/){:target="_blank"}: `0.37.2`
+  * [nomad-cli](http://nomad-cli.com/){:target="_blank"}: `2.4.8`
+  * [bundler](http://bundler.io/){:target="_blank"}: `1.10.3`
+* [XcodeUnitTestMiniserver](https://github.com/bitrise-io/xcodebuild-unittest-miniserver){:target="_blank"}: `1.2.0`
+* [cmd-bridge](https://github.com/bitrise-io/cmd-bridge){:target="_blank"}: `v0.9.2` installed and auto-started in server mode (with LaunchAgent)
 
 You can find the **Virtual Machine changelog** [here](/docs/vm-box-changelog.html).
 
@@ -97,7 +105,7 @@ a stability flag.
 * The latest stable Xcode version is available at: `/Applications/Xcodes/Xcode-stable.app`
 * The latest beta Xcode version is available at: `/Applications/Xcodes/Xcode-beta.app`
 
-*The default Xcode version is always the latest major version
+*The default Xcode version is always the latest stable version
 installed in the Virtual Machine, you can specify a different version
 for Xcode builder steps, for example to use the latest beta
 you should specify `-beta` at the Step's related input*
@@ -112,9 +120,10 @@ workflow with [this content](https://github.com/bitrise-io/bitrise-script-collec
 activate each by calling xcode-select and print the version of Xcode
 and all the SDKs (and Simulators) available for the version.*
 
-## Update Frequency
 
-We update our OS X Virtual Machines weekly in the following manner:
+## Virtual Machine update scheduled
+
+We update our OS X Virtual Machines at about every seconds week in the following manner:
 
 * At the beginning of the week (mostly on Monday) we prepare the new Virtual Machines which will contain the latest stable Xcode version and the latest beta version too. We announce the pre-installed tool version changes on our [blog](http://blog.bitrise.io/){:target="_blank"} and also update this page once we know the final list.
 * During the week we test the new Virtual Machine internally to ensure it's stable enough for the release.
@@ -125,7 +134,7 @@ and is usually performed during the weekend to not to interfere
 with your everyday business.
 
 Updates are always announced on our [blog](http://blog.bitrise.io/){:target="_blank"}
-and can be seen on [your Bitrise Dashboard](http://www.bitrise.io/dashboard){:target="_blank"} and we also send you
+and can be seen on [your Bitrise Dashboard](https://www.bitrise.io/dashboard){:target="_blank"} and we also send you
 a *Platform Update email* about significant changes unless you disable it on
 your [Account Settings](https://www.bitrise.io/me/profile){:target="_blank"} page.
 
@@ -139,22 +148,13 @@ These patches do not change any pre-installed tool's version,
 unless it's really necessary.
 
 
-## Last update
+## Previous and upcoming updates
 
-The base box on the Bitrise worker servers were last
-updated at **March 21, 2015**.
+Please see our [Virtual Machine changelog](/docs/vm-box-changelog.html)
+for more information on past and planned updates.
 
-
-## Next planned update
-
-We'll update our Virtual Machines on **Saturday, April 4, 2015**.
-
-
-### Version changes
-
-Not yet determined.
 
 
 > If you need older versions of a program or you know about a useful tool
 > which would be beneficial for everyone to be
-> pre-installed [let us know](http://www.bitrise.io/contact){:target="_blank"}!
+> pre-installed [let us know](https://www.bitrise.io/contact){:target="_blank"}!

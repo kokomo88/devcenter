@@ -2,7 +2,82 @@
 title: Virtual Machines / Box change log
 ---
 
-# Virtual Machines / Box change log
+# Virtual Machines / Box #changelog
+
+## July 11, 2015
+
+* OS X: `10.10.3` -> `10.10.4`
+* installed with Homebrew:
+    * __git__: `2.4.3` -> `2.4.5`
+    * __mercurial__: `3.4.1` -> `3.4.2`
+    * __xctool__: `0.2.3` -> `0.2.4`
+    * __NodeJS__: `v0.12.4` -> `v0.12.5`
+    * __NPM__: `2.10.1` -> `2.11.2`
+    * [ansible](http://www.ansible.com/home){:target="_blank"}: `1.9.1` -> `1.9.2`
+* __Xcode__:
+  * __-stable__: `6.3.2 (build version: 6D2105)` -> `6.4 (build version: 6E35b)`
+  * __-beta__: `7.0 beta2 (build version: 7A121l)`
+* __Ruby Gems__, *installed for the default Ruby version*
+  * [bundler](http://bundler.io/){:target="_blank"}: `1.10.3` -> `1.10.5`
+
+
+## June 13, 2015
+
+* coreutils: **new**, `8.23`, installed with [Homebrew](http://brew.sh/){:target="_blank"}, this means that all the tools are prefixed with the letter `g`. For example `timeout` is available as `gtimeout`.
+* git: `2.3.6` -> `2.4.3`
+* mercurial: `3.3.3` -> `3.4.1`
+* NodeJS: `v0.12.2` -> `v0.12.4`
+* NPM: `2.7.5` -> `2.10.1`
+* [ansible](http://www.ansible.com/home){:target="_blank"}: `1.9.0.1` -> `1.9.1`
+* Xcode:
+  * -stable: `6.3.1 (6D1002)` -> `6.3.2 (6D2105)`
+  * -beta: no beta Xcode installed
+* Ruby Gems, *installed for the default Ruby version*
+  * [CocoaPods](http://cocoapods.org/){:target="_blank"}: `0.37.0` -> `0.37.2`
+  * [nomad-cli](http://nomad-cli.com/){:target="_blank"}: `2.4.6` -> `2.4.8`
+  * [bundler](http://bundler.io/){:target="_blank"}: `1.10.3`
+
+
+## May 4, 2015
+
+* [CocoaPods](http://cocoapods.org/){:target="_blank"}: 0.36.4 - installed for the default Ruby version -> 0.37.0
+
+
+## May 2, 2015
+
+* git: 2.3.5 -> 2.3.6
+* Xcode:
+  * -stable: 6.3 -> 6.3.1 (6D1002)
+  * -beta: no beta Xcode installed
+* Rubies installed with RVM
+  * 2.1.6
+  * 2.2.2
+  * 2.1.5 (p273), set as default
+  * [CocoaPods](http://cocoapods.org/){:target="_blank"}: 0.36.3 - pre-installed for the default Ruby version -> 0.36.4
+  * bundler installed for the default Ruby version
+* [cmd-bridge](https://github.com/bitrise-io/cmd-bridge){:target="_blank"}: **new**, v0.9.2 installed and auto-started in server mode (with LaunchAgent)
+
+
+## April 18, 2015
+
+* Will include the **final version of Xcode 6.3** (6D570)
+* Xcode 6.2 and Xcode 6.3 beta 4 **will be removed**.
+* OS X: 10.10.2 -> 10.10.3
+* mercurial: 3.3.2 -> 3.3.3
+* NPM: 2.7.4 -> 2.7.5
+
+
+## April 4, 2015
+
+* git: 2.3.3 -> 2.3.5
+* NodeJS: v0.12.0 -> v0.12.2
+* NPM: 2.5.1 -> 2.7.4
+* [ansible](http://www.ansible.com/home){:target="_blank"}: 1.8.4 -> 1.9.0.1
+* Xcode:
+  * -beta: 6.3 beta 3 (6D543q) -> beta 4 (6D554n)
+* [RVM](http://rvm.io/){:target="_blank"}: 1.26.10 -> 1.26.11
+  * Ruby 2.1.5p273 installed with RVM, 2.1.5 is set as default
+  * [CocoaPods](http://cocoapods.org/){:target="_blank"}: 0.36.0 -> 0.36.3 *// pre-installed for the default Ruby version*
 
 
 ## March 21, 2015

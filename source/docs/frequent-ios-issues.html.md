@@ -5,6 +5,20 @@ title: Frequent iOS issues
 # Frequent iOS issues
 
 
+## Scheme can't be found
+
+Make sure:
+
+* You set the *Scheme* as **shared** in Xcode
+* You **commit this change** into your repository, **to the branch** you want to setup on Bitrise
+* You **push** this to the remote repository
+* You **abort the previous validation on Bitrise** if there's any and try to add it again, from the start
+
+If still doesn't work:
+
+Check your `.gitignore` file. A minimal example for iOS projects: [https://gist.github.com/viktorbenei/a4eeba38ff91e8dc77fb](https://gist.github.com/viktorbenei/a4eeba38ff91e8dc77fb).
+
+
 ## Pod install fails at validation
 
 Bitrise will try to `pod install` every *Podfile* it can find
@@ -15,65 +29,6 @@ in the repository you specify.
 * If you have more than one Podfile in your repository make sure that all can be pod installed!
 * Make sure that the Podfile is in the same directory as your Xcode project file (.xcodeproj).
 * Bitrise will try to scan every active *branch* of your repository during the validation. If you have older / unused branches which also include a Podfile you should check those branches and Podfiles too, or remove the branches from your repository if you don't use them anymore.
-
-
-## To use TestFlight Beta Testing, build X must contain the correct beta entitlement
-
-**Error:**
-
-You see this warning on iTunes Connect (`To use TestFlight Beta Testing, build X must contain the correct beta entitlement`) after a deploy from Bitrise
-and you can't enable the version for prerelease beta testing.
-
-**Solution:**
-
-* Make sure you use an **App Store distribution** Provisioning Profile for building your app, you can't use development, ad-hock distribution or enterprise profile if you want to use the iTunes Connect beta testing service.
-* Make sure your Provisioning Profile is up-to-date, you might even want to re-generate it as beta testing is only available for profiles generated after the introduction of the iTunes Connect beta testing service.
-
-If you're sure your profile should work (if you can upload a beta
-build directly from Xcode, and you can enable prerelease beta testing for it)
-you might have to do one more thing.
-
-Xcode generates a special **entitlements file** for beta testing
-but does only if you upload the build directly from Xcode.
-
-To force the generation of this file you have to add a .entitlements file
-to your Xcode project.
-
-The entitlements file is usually located in the target's folder, with the name **YOUR-TARGET-NAME.entitlements**. If your project does not include
-this file you have to create it yourself. You can do it manually
-or let Xcode generate one for you.
-
-**Automatic setup**
-
-Xcode can generate this file for you by going to your
-`Project settings > Capabilities tab >` enable the *iCloud* option
-or any other option from this page which requires special entitlements.
-The .entitlements file will be generated and added to your projects automatically
-and you can disable the capability option immediately (once you
-see the .entitlements file added to the project).
-
-**Manual setup**
-
-Generate the .entitlements (plist) file with the name: **YOUR-TARGET-NAME.entitlements**
-then **set in Xcode project settings**: in `Target > Build Settings` set the key **Code Signing Entitlements** (`CODE_SIGN_ENTITLEMENTS`) to the file's path (relative to the Xcode project file). It have to contain both the application-identifier and the beta-reports-active.
-
-**Example entitlements file content**
-
-*Note: both `application-identifier` and `beta-reports-active` key-value
-pair have to be present in the entitlements file.*
-
-    <?xml version="1.0" encoding="UTF-8"?>
-    <!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
-    <plist version="1.0">
-    <dict>
-      <key>application-identifier</key>
-      <string>$(AppIdentifierPrefix)$(CFBundleIdentifier)</string>
-      <key>beta-reports-active</key>
-      <true/>
-    </dict>
-    </plist>
-
-> Note: Every build which you want to push to iTunes Connect have to have a unique build and version number pair (increment either or both before a new deploy to iTunes Connect).
 
 
 ## Works in local but not on Bitrise
@@ -91,6 +46,66 @@ reproducible on your local machine.
 You can delete the local Xcode cache using your Terminal:
 
     rm -rf ~/Library/Developer/Xcode/DerivedData
+
+
+## Searching for errors and issues in Xcode generated outputs
+
+You should search for `error:` in the Xcode logs, in 99% of the
+cases that'll be the one which causes your issues.
+
+If that doesn't work you should also search for `warning:`,
+in rare cases Xcode doesn't print an `error:` even if it fails.
+
+If you have the logs on your own machine then you can run
+something like this in your Terminal:
+
+    grep --color 'error:' my.log
+    grep --color 'warning:' my.log
+
+
+## Xcode step (build, analyze, unit test or archive) fails on Bitrise.io
+
+Bitrise uses the **Xcode Command Line Tools** to run Xcode actions (build,
+analyze, unit test or archive) which in some rare cases works a bit different
+compared to if you run the same command from the Xcode app/GUI.
+
+To find the error message in an Xcode generated log you should
+search for `error:` and `warning:` in the logs, as described
+in the previous section (**Searching for errors and issues in Xcode generated outputs**).
+
+If that doesn't help you can run the same xcode command on your own
+machine, from **Terminal**. The exact `xcodebuild` command what's performed
+by Bitrise can be found around the top of the logs.
+
+To find it just search for `$ xcodebuild` in the logs, you'll find something like
+this (the exact command and parameters depend on the action):
+
+    $ xcodebuild -project X.xcodeproj -scheme X clean archive -archivePath /Users/vagrant/deploy/X.xcarchive PROVISIONING_PROFILE=1...-...-...-...-...b CODE_SIGN_IDENTITY=iPhone Developer: X (F...7) OTHER_CODE_SIGN_FLAGS=--keychain bitrise.keychain
+
+**You can copy this command and run it in Terminal on your own machine.
+The only things you should change (or remove) is the `OTHER_CODE_SIGN_FLAGS=--keychain bitrise.keychain`
+parameter**.
+
+*This is used by Bitrise to not to store Certificates in the System or
+Login keychain, but in a special bitrise.keychain instead (which is usually
+removed at the end of the step).*
+
+Running the same command in your Terminal should help find what the
+source of the issue is.
+
+
+## Step hangs (times out after a period without any logs) on Bitrise
+
+Check whether the scripts you use trigger any GUI prompts or popups,
+or wait for any user input.
+If a script waits for any user input it can cause the build to hang.
+
+Most frequent sources of this issue:
+
+* Your script tries to access an item in the OS X Keychain and the item is configured to ask for permission before access (this is the default type of Access Control configuration if you add an item - for example a password - to Keychain)
+* You try to use a script or tool which requires permissions where OS X presents a popup for acceptance (for example an `osascript`). You can use a workaround to allow the tool, without manual interaction by the user, for example by using [https://github.com/jacobsalmela/tccutil](https://github.com/jacobsalmela/tccutil){:target="_blank"}.
+  * For example to add `osascript` to the allowed OS X Accessibility list you can call **tccutil** from your script (don't forget to include it in your repository or download on-the-fly): `sudo python tccutil.py -i /usr/bin/osascript`
+  * You can download the script from GitHub directly, for example: `wget https://raw.githubusercontent.com/jacobsalmela/tccutil/master/tccutil.py`.
 
 
 ## ld: library not found for -lPods-...
@@ -179,3 +194,61 @@ Provisioning Profile*:
 ***Note:*** Apps built with *App Store distribution Provisioning Profiles*
 **can't be installed** on test devices, only through Apple's
 iTunes Connect system!
+
+## To use TestFlight Beta Testing, build X must contain the correct beta entitlement
+
+**Error:**
+
+You see this warning on iTunes Connect (`To use TestFlight Beta Testing, build X must contain the correct beta entitlement`) after a deploy from Bitrise
+and you can't enable the version for prerelease beta testing.
+
+**Solution:**
+
+* Make sure you use an **App Store distribution** Provisioning Profile for building your app, you can't use development, ad-hock distribution or enterprise profile if you want to use the iTunes Connect beta testing service.
+* Make sure your Provisioning Profile is up-to-date, you might even want to re-generate it as beta testing is only available for profiles generated after the introduction of the iTunes Connect beta testing service.
+
+If you're sure your profile should work (if you can upload a beta
+build directly from Xcode, and you can enable prerelease beta testing for it)
+you might have to do one more thing.
+
+Xcode generates a special **entitlements file** for beta testing
+but does only if you upload the build directly from Xcode.
+
+To force the generation of this file you have to add a .entitlements file
+to your Xcode project.
+
+The entitlements file is usually located in the target's folder, with the name **YOUR-TARGET-NAME.entitlements**. If your project does not include
+this file you have to create it yourself. You can do it manually
+or let Xcode generate one for you.
+
+**Automatic setup**
+
+Xcode can generate this file for you by going to your
+`Project settings > Capabilities tab >` enable the *iCloud* option
+or any other option from this page which requires special entitlements.
+The .entitlements file will be generated and added to your projects automatically
+and you can disable the capability option immediately (once you
+see the .entitlements file added to the project).
+
+**Manual setup**
+
+Generate the .entitlements (plist) file with the name: **YOUR-TARGET-NAME.entitlements**
+then **set in Xcode project settings**: in `Target > Build Settings` set the key **Code Signing Entitlements** (`CODE_SIGN_ENTITLEMENTS`) to the file's path (relative to the Xcode project file). It have to contain both the application-identifier and the beta-reports-active.
+
+**Example entitlements file content**
+
+*Note: both `application-identifier` and `beta-reports-active` key-value
+pair have to be present in the entitlements file.*
+
+    <?xml version="1.0" encoding="UTF-8"?>
+    <!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+    <plist version="1.0">
+    <dict>
+      <key>application-identifier</key>
+      <string>$(AppIdentifierPrefix)$(CFBundleIdentifier)</string>
+      <key>beta-reports-active</key>
+      <true/>
+    </dict>
+    </plist>
+
+> Note: Every build which you want to push to iTunes Connect have to have a unique build and version number pair (increment either or both before a new deploy to iTunes Connect).
