@@ -35,4 +35,4 @@ If there were errors the following message is added to the Formatted Output:
     See the logs for more information
     
 
-There is a simple test project available at [https://github.com/bazscsa/kiwi-test-project](https://github.com/bazscsa/kiwi-test-project) You can simply try by adding the app and adding the ***Xcode: Unit Test*** step [https://github.com/bitrise-io/steps-xcode-builder](https://github.com/bitrise-io/steps-xcode-builder) and one of the CocoaPods install steps [https://github.com/bitrise-io/steps-cocoapods-and-repository-validator](https://github.com/bitrise-io/steps-cocoapods-and-repository-validator)teps-cocoapods-and-repository-validator)
+There is a simple test project available at [https://github.com/bazscsa/kiwi-test-project](https://github.com/bazscsa/kiwi-test-project) You can simply try by adding the app and adding the ***Xcode: Unit Test*** step [https://github.com/bitrise-io/steps-xcode-builder](https://github.com/bitrise-io/steps-xcode-builder) and one of the CocoaPods install steps [https://github.com/bitrise-io/steps-cocoapods-and-repository-validator](https://github.com/bitrise-io/steps-cocoapods-and-repository-validator)
