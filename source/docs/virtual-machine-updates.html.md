@@ -30,18 +30,18 @@ Our current Base Box contains the following programs preinstalled:
 
 * [Homebrew](http://brew.sh/){:target="_blank"}: `0.9.5`
 * installed with Homebrew:
-    * __coreutils__: `8.23` - installed with Homebrew, this means that all the tools are prefixed with the letter __g__. For example `timeout` is available as `gtimeout`.
+    * __coreutils__: `8.24` - installed with Homebrew, this means that all the tools are prefixed with the letter __g__. For example `timeout` is available as `gtimeout`.
     * __git__: `2.4.5`
     * __mercurial__: `3.4.2`
     * __xctool__: `0.2.4`
     * __go__: `1.4.2`
-    * __NodeJS__: `v0.12.5`
-    * __NPM__: `2.11.2`
+    * __NodeJS__: `v0.12.7`
+    * __NPM__: `2.12.1`
     * __wget__: `1.16.3`
     * [ansible](http://www.ansible.com/home){:target="_blank"}: `1.9.2`
 * __Xcode__:
     * __-stable__: `6.4 (build version: 6E35b)`
-    * __-beta__: `7.0 beta2 (build version: 7A121l)`
+    * __-beta__: `7.0 beta 3 (build version: 7A152u)`
 * [RVM](http://rvm.io/){:target="_blank"}: `1.26.11`
 * __Rubies__ (installed with RVM)
     * `2.1.6`
